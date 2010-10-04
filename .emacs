@@ -5,23 +5,20 @@
 (setq my-lisp-directory (expand-file-name "~/.emacs.d/"))
 
 (require 'php-completion)
+(require 'ebackup)
 (require 'anything)
 (require 'anything-match-plugin)
 (require 'auto-complete)
-(require 'git-blame)
-(require 'git)
-(require 'egit)
 (require 'etags-select)
 (require 'gtags)
 (require 'dired+)
+
 
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet/snippets")
 
 (global-auto-complete-mode t)
-(define-key ac-complete-mode-map "\C-c n" 'ac-next)
-(define-key ac-complete-mode-map "\C-c p" 'ac-previous)
 
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
@@ -46,22 +43,6 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))	
 
-; return a backup file path of a give file path
-; with full directory mirroring from a root dir
-; non-existant dir will be created
-(defun my-backup-file-name (fpath)
-  "Return a new file path of a given file path.
-If the new path's directories does not exist, create them."
-  (let (backup-root bpath)
-    (setq backup-root "~/.emacs.d/emacs-backup")
-    (setq bpath (concat backup-root fpath "~"))
-    (make-directory (file-name-directory bpath) bpath)
-    bpath
-  )
-)
-(setq make-backup-file-name-function 'my-backup-file-name)
-
-
 (setq make-backup-files t) 
 (setq version-control t)
 (setq backup-by-copying t)
@@ -78,8 +59,7 @@ If the new path's directories does not exist, create them."
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
- '(uniquify-min-dir-content 0)
- '(vc-make-backup-files t))
+ '(uniquify-min-dir-content 0))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
