@@ -1,38 +1,36 @@
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
-(setq my-lisp-directory (expand-file-name "~/.emacs.d/"))
 
-(require 'php-completion)
 (require 'anything)
 (require 'anything-match-plugin)
+
+(require 'php-completion)
 (require 'auto-complete)
+(global-auto-complete-mode t)
+
 (require 'etags-select)
 (require 'dired+)
+
 (require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
+(add-to-list 'auto-mode-alist '("\\.twig\\'" . html-mode))
+
 (require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/yasnippet/snippets")
+(global-set-key (kbd "C-c TAB") 'yas/expand)
+
 
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/yasnippet/snippets")
-
-(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.twig\\'" . html-mode))
-
-(global-auto-complete-mode t)
 
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
-;;  Positionner  la variable  `my-lisp-directory'  sur  une chaine  de
-;; caractères contenant le  chemin complet du repertoire contenant les
-;; fichiers lisp. 
 
 
-;;  Ajouter ce  répertoire à  la liste  des répertoires  contenant les
-;; bibliothèques :
-(add-to-list 'load-path my-lisp-directory)
 
 (set-background-color   "black")
 (set-foreground-color   "white")
