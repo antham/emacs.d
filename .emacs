@@ -1,22 +1,24 @@
-(add-to-list 'load-path "/home/miramaze/.emacs.d")
-(add-to-list 'load-path "/home/miramaze/.emacs.d/company")
-(add-to-list 'load-path "/usr/local/share/gtags")
-(add-to-list 'load-path "/home/miramaze/.emacs.d/yasnippet")
+(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/yasnippet")
 (setq my-lisp-directory (expand-file-name "~/.emacs.d/"))
 
 (require 'php-completion)
-(require 'ebackup)
 (require 'anything)
 (require 'anything-match-plugin)
 (require 'auto-complete)
 (require 'etags-select)
-(require 'gtags)
 (require 'dired+)
-
-
+(require 'yaml-mode)
 (require 'yasnippet)
+
+(require 'backup-each-save)
+(add-hook 'after-save-hook 'backup-each-save)
+
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet/snippets")
+
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.twig\\'" . html-mode))
 
 (global-auto-complete-mode t)
 
@@ -31,10 +33,6 @@
 ;;  Ajouter ce  répertoire à  la liste  des répertoires  contenant les
 ;; bibliothèques :
 (add-to-list 'load-path my-lisp-directory)
-(global-set-key (kbd "<f5>") 'other-window)
-(global-set-key (kbd "<f6>") 'enlarge-window)
-(global-set-key (kbd "<f7>") 'enlarge-window-horizontally)
-(global-set-key (kbd "<f8>") 'delete-window)
 
 (set-background-color   "black")
 (set-foreground-color   "white")
@@ -43,10 +41,6 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))	
 
-(setq make-backup-files t) 
-(setq version-control t)
-(setq backup-by-copying t)
-
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -54,8 +48,6 @@
   ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
  '(initial-buffer-choice "~/")
- '(kept-new-versions 5)
- '(kept-old-versions 5)
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
@@ -65,4 +57,12 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- )
+ '(diredp-compressed-file-suffix ((t (:background "White" :foreground "Yellow"))))
+ '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
+ '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
+ '(diredp-display-msg ((t (:background "White" :foreground "Blue"))))
+ '(diredp-executable-tag ((t (:background "White" :foreground "Red"))))
+ '(diredp-file-name ((t (:background "White" :foreground "Blue"))))
+ '(diredp-file-suffix ((t (:background "White" :foreground "DarkMagenta"))))
+ '(diredp-inode+size ((t (:background "White" :foreground "DarkBlue"))))
+ '(diredp-symlink ((t (:background "White" :foreground "DarkOrange")))))
