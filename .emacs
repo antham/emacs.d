@@ -29,7 +29,17 @@
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
+(global-linum-mode)
+(ido-mode t)
+(toggle-dired-find-file-reuse-dir t)
+
+(global-set-key (kbd "<f1>") 'etags-select-find-tag)
+(global-set-key (kbd "<f2>") 'etags-select-find-tag-at-point)
+(global-set-key (kbd "<f5>") 'find-name-dired)
+(global-set-key (kbd "<f6>") 'find-grep-dired)
+(global-set-key (kbd "<f7>") 'comment-or-uncomment-region)
 
 
 (set-background-color   "black")
