@@ -65,12 +65,13 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(diredp-compressed-file-suffix ((t (:background "White" :foreground "Yellow"))))
+ '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
- '(diredp-display-msg ((t (:background "White" :foreground "Blue"))))
- '(diredp-executable-tag ((t (:background "White" :foreground "Red"))))
- '(diredp-file-name ((t (:background "White" :foreground "Blue"))))
- '(diredp-file-suffix ((t (:background "White" :foreground "DarkMagenta"))))
- '(diredp-inode+size ((t (:background "White" :foreground "DarkBlue"))))
- '(diredp-symlink ((t (:background "White" :foreground "DarkOrange")))))
+ '(diredp-dir-priv ((t (:background "LightGray" :foreground "DarkRed" :underline "red" :weight extra-bold))))
+ '(diredp-display-msg ((t (:background "Orange" :foreground "Blue" :weight bold))))
+ '(diredp-executable-tag ((t (:background "White" :foreground "Red" :weight bold))))
+ '(diredp-file-name ((t (:background "Grey" :foreground "Blue" :weight bold))))
+ '(diredp-file-suffix ((t (:background "Grey" :foreground "Black" :weight bold))))
+ '(diredp-inode+size ((t (:background "Grey" :foreground "DarkGreen" :weight bold))))
+ '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold)))))
