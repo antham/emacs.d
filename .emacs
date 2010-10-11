@@ -25,6 +25,8 @@
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
+(require 'browse-kill-ring)
+(require 'browse-kill-ring+)
 
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
