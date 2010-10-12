@@ -1,5 +1,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/icicles")
 
 (require 'anything)
 (require 'anything-match-plugin)
@@ -19,14 +20,15 @@
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet/snippets")
-(global-set-key (kbd "C-c TAB") 'yas/expand)
-
+(global-set-key (kbd "C-c C-e") 'yas/expand)
 
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
+
+(require 'icicles)
 
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
@@ -37,12 +39,8 @@
 (ido-mode t)
 (toggle-dired-find-file-reuse-dir t)
 
-(global-set-key (kbd "<f1>") 'etags-select-find-tag)
-(global-set-key (kbd "<f2>") 'etags-select-find-tag-at-point)
-(global-set-key (kbd "<f5>") 'find-name-dired)
-(global-set-key (kbd "<f6>") 'find-grep-dired)
-(global-set-key (kbd "<f7>") 'comment-or-uncomment-region)
-
+(global-set-key (kbd "<f1>") 'find-name-dired)
+(global-set-key (kbd "<f2>") 'find-grep-dired)
 
 (set-background-color   "black")
 (set-foreground-color   "white")
