@@ -47,6 +47,7 @@
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+(column-number-mode t)
 (global-linum-mode)
 (ido-mode t)
 (toggle-dired-find-file-reuse-dir t)
