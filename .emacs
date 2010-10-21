@@ -33,6 +33,18 @@
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
+(defun toggle-fullscreen (&optional f)
+  (interactive)
+  (let ((current-value (frame-parameter nil 'fullscreen)))
+       (set-frame-parameter nil 'fullscreen
+                            (if (equal 'fullboth current-value)
+                                (if (boundp 'old-fullscreen) old-fullscreen nil)
+                                (progn (setq old-fullscreen current-value)
+                                       'fullboth)))))
+
+(global-set-key [f11] 'toggle-fullscreen)
+
+
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-linum-mode)
