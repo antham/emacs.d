@@ -1,3 +1,5 @@
+(server-start)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/icicles")
@@ -46,7 +48,9 @@
 
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x b") 'anything)
 
+(display-time-mode t)
 (column-number-mode t)
 (global-linum-mode)
 (ido-mode t)
@@ -54,6 +58,7 @@
 
 (global-set-key (kbd "<f1>") 'find-name-dired)
 (global-set-key (kbd "<f2>") 'find-grep-dired)
+(global-set-key (kbd "<f3>") 'find-dired)
 
 (set-background-color   "black")
 (set-foreground-color   "white")
