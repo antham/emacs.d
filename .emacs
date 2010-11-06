@@ -80,6 +80,7 @@
 (global-set-key (kbd "<f1>") 'find-name-dired)
 (global-set-key (kbd "<f2>") 'find-grep-dired)
 (global-set-key (kbd "<f3>") 'find-dired)
+(global-set-key (kbd "<f4>") 'delete-trailing-whitespace)
 
 (set-background-color   "black")
 (set-foreground-color   "white")
