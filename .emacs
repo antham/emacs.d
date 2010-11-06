@@ -52,6 +52,23 @@
 
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(setq ibuffer-saved-filter-groups
+      '(("Groups"
+	 ("Code" (or (mode . python-mode)
+		     (mode . js2-mode)
+		     (mode . html-mode)
+		     (mode . css-mode)
+		     (mode . php-mode)
+		     (mode . yaml-mode)))
+	 )))
+
+(add-hook 'ibuffer-mode-hook
+	  '(lambda ()
+	     (ibuffer-auto-mode 1)
+	     (ibuffer-switch-to-saved-filter-groups "Groups")))
+
+(setq ibuffer-expert t)
+
 (global-set-key (kbd "C-x b") 'anything)
 
 (display-time-mode t)
