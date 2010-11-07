@@ -4,6 +4,9 @@
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/icicles")
 
+(require 'autopair)
+(autopair-global-mode 1)
+
 (require 'anything)
 (require 'anything-match-plugin)
 
