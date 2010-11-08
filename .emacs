@@ -41,6 +41,8 @@
 (setq x-select-enable-clipboard t)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(require 'show-wspace)
+
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
 
@@ -99,7 +101,7 @@
 
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))	
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -127,3 +129,13 @@
  '(diredp-file-suffix ((t (:background "Grey" :foreground "Black" :weight bold))))
  '(diredp-inode+size ((t (:background "Grey" :foreground "DarkGreen" :weight bold))))
  '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold)))))
+
+(defun coding-hook ()
+(toggle-show-trailing-whitespace-show-ws)
+)
+
+(add-hook 'python-mode-hook 'coding-hook)
+(add-hook 'php-mode-hook 'coding-hook)
+(add-hook 'js2-mode-hook 'coding-hook)
+(add-hook 'yaml-mode-hook 'coding-hook)
+(add-hook 'html-mode-hook 'coding-hook)
