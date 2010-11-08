@@ -34,7 +34,7 @@
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
-(setq make-backup-files nil)
+(setq backup-inhibited t)
 
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
