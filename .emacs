@@ -42,6 +42,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'show-wspace)
+(toggle-show-trailing-whitespace-show-ws)
 
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
@@ -131,11 +132,12 @@
  '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold)))))
 
 (defun coding-hook ()
-(toggle-show-trailing-whitespace-show-ws)
 )
 
 (add-hook 'python-mode-hook 'coding-hook)
 (add-hook 'php-mode-hook 'coding-hook)
-(add-hook 'js2-mode-hook 'coding-hook)
 (add-hook 'yaml-mode-hook 'coding-hook)
 (add-hook 'html-mode-hook 'coding-hook)
+(add-hook 'css-mode-hook 'coding-hook)
+(add-hook 'js2-mode-hook 'coding-hook)
+
