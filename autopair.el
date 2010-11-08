@@ -320,7 +320,7 @@ the list, or call it in your handlers.")
            (define-key map (kbd "<backspace>") 'autopair-backspace)
            (define-key map [backspace] 'autopair-backspace)
            (define-key map (kbd "DEL") 'autopair-backspace)
-           (define-key map (kbd "RET") 'autopair-newline)
+           (define-key map (kbd "C-c RET") 'autopair-newline)
            (dotimes (char 256) ;; only searches the first 256 chars,
                                ;; TODO: is this enough/toomuch/stupid?
              (unless (member char
@@ -614,10 +614,10 @@ returned) and uplisting stops there."
   (let ((pair (autopair-find-pair (char-before))))
     (when (eq (char-after) pair)
       (setq autopair-action (list 'newline pair (point))))
-    (autopair-fallback (kbd "RET"))))
+    (autopair-fallback (kbd "C-c RET"))))
 (put 'autopair-newline 'function-documentation
      '(concat "Possibly insert two newlines and place point after the first, indented.\n\n"
-              (autopair-document-bindings (kbd "RET"))))
+              (autopair-document-bindings (kbd "C-c RET"))))
 
 (defun autopair-skip-p ()
   (interactive)
