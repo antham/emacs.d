@@ -36,8 +36,15 @@
 
 (setq backup-inhibited t)
 
+(show-paren-mode 1)
+(set-default 'indicate-empty-lines t)
+(setq x-select-enable-clipboard t)
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
+
+(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
 (require 'icicles)
 
