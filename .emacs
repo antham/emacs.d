@@ -4,6 +4,8 @@
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 
+(require 'find-recursive)
+
 (require 'autopair)
 (autopair-global-mode 1)
 
