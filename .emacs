@@ -1,23 +1,18 @@
 (server-start)
 
+;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 
-(require 'find-recursive)
+;;## Coding part
 
-(require 'autopair)
-(autopair-global-mode 1)
-
-(require 'anything)
-(require 'anything-match-plugin)
+(require 'git)
+(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
 (require 'php-completion)
-(require 'auto-complete)
-(global-auto-complete-mode t)
-
-(require 'etags-select)
-(require 'dired+)
+(autoload 'php-mode "php-mode.el" "Php mode." t)
+(setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
@@ -28,47 +23,42 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/yasnippet/snippets")
-(global-set-key (kbd "C-c C-e") 'yas/expand)
+(defun coding-hook ()
+)
 
+(add-hook 'python-mode-hook 'coding-hook)
+(add-hook 'php-mode-hook 'coding-hook)
+(add-hook 'yaml-mode-hook 'coding-hook)
+(add-hook 'html-mode-hook 'coding-hook)
+(add-hook 'css-mode-hook 'coding-hook)
+(add-hook 'js2-mode-hook 'coding-hook)
+
+;;## Appearance
+
+(set-background-color   "black")
+(set-foreground-color   "white")
+
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+
+;;## Manage buffers and files
+
+;; (require 'icicles)
+(require 'find-recursive)
+(require 'anything)
+(require 'anything-match-plugin)
+(require 'etags-select)
+(require 'dired+)
+(toggle-dired-find-file-reuse-dir t)
+
+(ido-mode t)
+
+(setq backup-inhibited t)
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
-(setq backup-inhibited t)
-
-(show-paren-mode 1)
-(set-default 'indicate-empty-lines t)
-(setq x-select-enable-clipboard t)
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-(require 'show-wspace)
-(global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
-
-(require 'browse-kill-ring)
-(require 'browse-kill-ring+)
-
-(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
-
-;; (require 'icicles)
-
-(autoload 'php-mode "php-mode.el" "Php mode." t)
-(setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
-
-(defun toggle-fullscreen (&optional f)
-  (interactive)
-  (let ((current-value (frame-parameter nil 'fullscreen)))
-    (set-frame-parameter nil 'fullscreen
-			 (if (equal 'fullboth current-value)
-			     (if (boundp 'old-fullscreen) old-fullscreen nil)
-			   (progn (setq old-fullscreen current-value)
-				  'fullboth)))))
-
-(global-set-key [f11] 'toggle-fullscreen)
-
-
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 (setq ibuffer-saved-filter-groups
       '(("Groups"
 	 ("Code" (or (mode . python-mode)
@@ -86,25 +76,58 @@
 
 (setq ibuffer-expert t)
 
-(global-set-key (kbd "C-x b") 'anything)
+;;## Edition functionality
 
-(display-time-mode t)
 (column-number-mode t)
 (global-linum-mode)
-(ido-mode t)
-(toggle-dired-find-file-reuse-dir t)
+
+(require 'show-wspace)
+
+(require 'browse-kill-ring)
+(require 'browse-kill-ring+)
+
+(require 'autopair)
+(autopair-global-mode 1)
+(show-paren-mode 1)
+
+(require 'auto-complete)
+(global-auto-complete-mode t)
+
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/yasnippet/snippets")
+
+(set-default 'indicate-empty-lines t)
+(setq x-select-enable-clipboard t)
+
+;; #Remaining features
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(defun toggle-fullscreen (&optional f)
+  (interactive)
+  (let ((current-value (frame-parameter nil 'fullscreen)))
+    (set-frame-parameter nil 'fullscreen
+			 (if (equal 'fullboth current-value)
+			     (if (boundp 'old-fullscreen) old-fullscreen nil)
+			   (progn (setq old-fullscreen current-value)
+				  'fullboth)))))
+
+(display-time-mode t)
+
+;;## Keybinding
+
+(global-set-key (kbd "C-x b") 'anything)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-c C-e") 'yas/expand)
+(global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "<f1>") 'find-name-dired)
 (global-set-key (kbd "<f2>") 'find-grep-dired)
 (global-set-key (kbd "<f3>") 'find-dired)
 (global-set-key (kbd "<f4>") 'delete-trailing-whitespace)
+(global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
-(set-background-color   "black")
-(set-foreground-color   "white")
-
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -132,14 +155,3 @@
  '(diredp-file-suffix ((t (:background "Grey" :foreground "Black" :weight bold))))
  '(diredp-inode+size ((t (:background "Grey" :foreground "DarkGreen" :weight bold))))
  '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold)))))
-
-(defun coding-hook ()
-)
-
-(add-hook 'python-mode-hook 'coding-hook)
-(add-hook 'php-mode-hook 'coding-hook)
-(add-hook 'yaml-mode-hook 'coding-hook)
-(add-hook 'html-mode-hook 'coding-hook)
-(add-hook 'css-mode-hook 'coding-hook)
-(add-hook 'js2-mode-hook 'coding-hook)
-
