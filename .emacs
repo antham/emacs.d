@@ -47,8 +47,11 @@
 
 ;; (require 'icicles)
 (require 'find-recursive)
+(require 'traverselisp)
 (require 'anything)
+(require 'anything-config)
 (require 'anything-match-plugin)
+(require 'anything-traverse)
 (require 'etags-select)
 (require 'dired+)
 (toggle-dired-find-file-reuse-dir t)
