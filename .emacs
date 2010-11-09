@@ -44,7 +44,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'show-wspace)
-(toggle-show-trailing-whitespace-show-ws)
+(global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
 
 (require 'browse-kill-ring)
 (require 'browse-kill-ring+)
