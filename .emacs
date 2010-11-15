@@ -58,7 +58,6 @@
 
 (ido-mode t)
 
-(setq backup-inhibited t)
 (require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
