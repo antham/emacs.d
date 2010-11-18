@@ -125,7 +125,7 @@
 (global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "<f1>") 'find-name-dired)
-(global-set-key (kbd "<f2>") 'find-grep-dired)
+(global-set-key (kbd "<f2>") 'grep-find)
 (global-set-key (kbd "<f3>") 'find-dired)
 (global-set-key (kbd "<f4>") 'delete-trailing-whitespace)
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
