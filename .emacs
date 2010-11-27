@@ -121,7 +121,10 @@
 
 (global-set-key (kbd "C-x b") 'anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(global-set-key (kbd "C-c C-a") 'term)
 (global-set-key (kbd "C-c C-e") 'yas/expand)
+(global-set-key (kbd "C-c C-s") 'shell)
 (global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "<f1>") 'find-name-dired)
