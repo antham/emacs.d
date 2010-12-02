@@ -23,6 +23,22 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 
+(require 'flymake)
+(defun flymake-php-init ()
+  "Use php to check the syntax of the current file."
+  (let* ((temp (flymake-init-create-temp-buffer-copy 'flymake-create-temp-inplace))
+	 (local (file-relative-name temp (file-name-directory buffer-file-name))))
+    (list "php" (list "-f" local "-l"))))
+
+(add-to-list 'flymake-err-line-patterns
+  '("\\(Parse\\|Fatal\\) error: +\\(.*?\\) in \\(.*?\\) on line \\([0-9]+\\)$" 3 4 nil 2))
+
+(add-to-list 'flymake-allowed-file-name-masks '("\\.php$" flymake-php-init))
+
+(add-hook 'php-mode-hook (lambda () (flymake-mode 1)))
+(global-set-key (kbd "C-c C-d") 'flymake-goto-prev-error)
+(global-set-key (kbd "C-c C-u") 'flymake-goto-next-error)
+
 (defun coding-hook ()
 )
 
@@ -121,7 +137,6 @@
 
 (global-set-key (kbd "C-x b") 'anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
 (global-set-key (kbd "C-c C-a") 'term)
 (global-set-key (kbd "C-c C-e") 'yas/expand)
 (global-set-key (kbd "C-c C-s") 'shell)
@@ -136,10 +151,12 @@
 
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(flymake-log-level 2)
+ '(flymake-no-changes-timeout 0.5)
  '(inhibit-startup-screen t)
  '(initial-buffer-choice "~/")
  '(php-mode-force-pear t)
@@ -147,10 +164,10 @@
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(uniquify-min-dir-content 0))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
@@ -160,4 +177,6 @@
  '(diredp-file-name ((t (:background "Grey" :foreground "Blue" :weight bold))))
  '(diredp-file-suffix ((t (:background "Grey" :foreground "Black" :weight bold))))
  '(diredp-inode+size ((t (:background "Grey" :foreground "DarkGreen" :weight bold))))
- '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold)))))
+ '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold))))
+ '(flymake-errline ((((class color) (background dark)) (:background "gray44" :foreground "white"))))
+ '(flymake-warnline ((((class color) (background dark)) (:background "gray44" :foreground "white")))))
