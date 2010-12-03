@@ -85,7 +85,7 @@
    anything-c-source-occur
    anything-c-source-kill-ring
    anything-c-source-minibuffer-history
-   anything-c-shell-history
+   anything-c-source-shell-history
    anything-c-source-emacs-commands)
  " *own-anything*"))
 
