@@ -1,5 +1,4 @@
 (server-start)
-
 ;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
@@ -73,21 +72,28 @@
 (require 'dired+)
 (toggle-dired-find-file-reuse-dir t)
 
-(defun own-anything()
+(defun base-anything()
 (interactive)
 (anything-other-buffer
  '(anything-c-source-buffers
-   anything-c-source-file-name-history
    anything-c-source-recentf
-   anything-c-source-files-in-current-dir
-   anything-c-source-locate
-   anything-c-source-complex-command-history
-   anything-c-source-occur
-   anything-c-source-kill-ring
-   anything-c-source-minibuffer-history
-   anything-c-source-shell-history
-   anything-c-source-emacs-commands)
- " *own-anything*"))
+   anything-c-source-file-name-history
+   anything-c-source-files-in-current-dir)
+ " *base-anything*"))
+
+(defun file-anything()
+(interactive)
+(anything-other-buffer
+ '(anything-c-source-occur
+   anything-c-source-browse-code
+   anything-c-source-kill-ring)
+ " *file-anything*"))
+
+(defun locate-anything()
+(interactive)
+(anything-other-buffer
+'(anything-c-source-locate)
+ " *locate-anything*"))
 
 (ido-mode t)
 
@@ -152,11 +158,14 @@
 
 ;;## Keybinding
 
-(global-set-key (kbd "C-x b") 'own-anything)
+(global-set-key (kbd "C-x b") 'base-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-(global-set-key (kbd "C-c C-a") 'term)
-(global-set-key (kbd "C-c C-e") 'yas/expand)
-(global-set-key (kbd "C-c C-s") 'shell)
+(global-set-key (kbd "C-c a") 'term)
+(global-set-key (kbd "C-c b") 'switch-to-buffer)
+(global-set-key (kbd "C-c e") 'yas/expand)
+(global-set-key (kbd "C-c l") 'locate-anything)
+(global-set-key (kbd "C-c o") 'file-anything)
+(global-set-key (kbd "C-c s") 'shell)
 (global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "<f1>") 'find-name-dired)
@@ -168,10 +177,10 @@
 
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
  '(inhibit-startup-screen t)
@@ -181,10 +190,10 @@
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(uniquify-min-dir-content 0))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
