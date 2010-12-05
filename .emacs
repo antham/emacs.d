@@ -67,7 +67,6 @@
 (require 'anything-config)
 (require 'anything-match-plugin)
 (require 'anything-traverse)
-(require 'anything-c-shell-history)
 (require 'etags-select)
 (require 'dired+)
 (toggle-dired-find-file-reuse-dir t)
