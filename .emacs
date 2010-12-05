@@ -9,7 +9,6 @@
 (require 'git)
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
-(require 'php-completion)
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
@@ -135,6 +134,35 @@
 
 (require 'auto-complete)
 (global-auto-complete-mode t)
+(require 'ac-dabbrev)
+
+(setq ac-auto-start 4)
+
+(setq ac-modes
+      '(emacs-lisp-mode lisp-interaction-mode lisp-mode scheme-mode
+                        c-mode cc-mode c++-mode java-mode
+                        perl-mode cperl-mode python-mode ruby-mode
+                        ecmascript-mode javascript-mode php-mode css-mode
+                        makefile-mode sh-mode fortran-mode f90-mode ada-mode
+                        xml-mode sgml-mode
+                        haskell-mode literate-haskell-mode
+                        asm-mode
+                        ))
+
+(custom-set-variables
+ '(ac-sources
+   '(
+     ac-source-imenu
+     ac-source-dabbrev
+     ac-sources-features
+     ac-source-files-in-current-dir
+     ac-source-filename
+     ac-sources-functions
+     ac-source-words-in-buffer
+     ac-source-words-in-all-buffer
+     )))
+
+
 
 (require 'yasnippet)
 (yas/initialize)
