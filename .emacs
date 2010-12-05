@@ -162,28 +162,30 @@
 
 (global-set-key (kbd "C-x b") 'base-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-(global-set-key (kbd "C-c a") 'term)
+
+(global-set-key (kbd "C-c a") 'ack)
 (global-set-key (kbd "C-c b") 'switch-to-buffer)
 (global-set-key (kbd "C-c e") 'yas/expand)
-(global-set-key (kbd "C-c g") 'grep-buffers)
+(global-set-key (kbd "C-c f a") 'file-anything)
+(global-set-key (kbd "C-c f d") 'find-dired)
+(global-set-key (kbd "C-c f g") 'find-grep-dired)
+(global-set-key (kbd "C-c f n") 'find-name-dired)
+(global-set-key (kbd "C-c g b") 'grep-buffers)
+(global-set-key (kbd "C-c g f") 'grep-find)
 (global-set-key (kbd "C-c l") 'locate-anything)
-(global-set-key (kbd "C-c o") 'file-anything)
 (global-set-key (kbd "C-c s") 'shell)
-(global-set-key (kbd "C-c w") 'toggle-show-trailing-whitespace-show-ws)
+(global-set-key (kbd "C-c t") 'term)
+(global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
+(global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
-(global-set-key (kbd "<f1>") 'find-name-dired)
-(global-set-key (kbd "<f2>") 'find-dired)
-(global-set-key (kbd "<f3>") 'find-grep-dired)
-(global-set-key (kbd "<f4>") 'grep-find)
-(global-set-key (kbd "<f5>") 'delete-trailing-whitespace)
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
-
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(anything-c-adaptive-history-length 100)
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
  '(inhibit-startup-screen t)
@@ -193,10 +195,10 @@
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(uniquify-min-dir-content 0))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
