@@ -63,6 +63,7 @@
 
 ;; (require 'icicles)
 (require 'grep-buffers)
+(require 'ack)
 (require 'find-recursive)
 (require 'traverselisp)
 (require 'anything)
@@ -87,8 +88,7 @@
   (anything-other-buffer
    '(anything-c-source-occur
      anything-c-source-browse-code
-     anything-c-source-kill-ring
-     anything-c-source-traverse-occur)
+     anything-c-source-kill-ring)
    " *file-anything*"))
 
 (defun locate-anything()
