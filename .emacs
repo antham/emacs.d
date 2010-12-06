@@ -186,6 +186,12 @@
 
 (display-time-mode t)
 
+(autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
+
+  (add-hook 'js2-mode-hook 'js2-custom-setup)
+  (defun js2-custom-setup ()
+    (moz-minor-mode 1))
+
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
