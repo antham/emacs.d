@@ -133,37 +133,10 @@
 (autopair-global-mode 1)
 (show-paren-mode 1)
 
-(require 'auto-complete)
-(global-auto-complete-mode t)
+(require 'auto-complete-config)
 (require 'ac-dabbrev)
-
-(setq ac-auto-start 4)
-
-(setq ac-modes
-      '(emacs-lisp-mode lisp-interaction-mode lisp-mode scheme-mode
-                        c-mode cc-mode c++-mode java-mode
-                        perl-mode cperl-mode python-mode ruby-mode
-                        ecmascript-mode javascript-mode php-mode css-mode
-                        makefile-mode sh-mode fortran-mode f90-mode ada-mode
-                        xml-mode sgml-mode
-                        haskell-mode literate-haskell-mode
-                        asm-mode
-                        ))
-
-(custom-set-variables
- '(ac-sources
-   '(
-     ac-source-imenu
-     ac-source-dabbrev
-     ac-sources-features
-     ac-source-files-in-current-dir
-     ac-source-filename
-     ac-sources-functions
-     ac-source-words-in-buffer
-     ac-source-words-in-all-buffer
-     )))
-
-
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
 
 (require 'yasnippet)
 (yas/initialize)
@@ -215,25 +188,13 @@
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(anything-c-adaptive-history-length 100)
- '(flymake-log-level 2)
- '(flymake-no-changes-timeout 0.5)
- '(inhibit-startup-screen t)
- '(initial-buffer-choice "~/")
- '(php-mode-force-pear t)
- '(remote-shell-program "zsh")
- '(uniquify-buffer-name-style (quote forward) nil (uniquify))
- '(uniquify-min-dir-content 0))
+
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(ac-completion-face ((t (:foreground "gray" :underline t))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
