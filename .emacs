@@ -180,6 +180,8 @@
 (global-set-key (kbd "C-c f n") 'find-name-dired)
 (global-set-key (kbd "C-c g b") 'grep-buffers)
 (global-set-key (kbd "C-c g f") 'grep-find)
+(global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
+(global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
 (global-set-key (kbd "C-c s") 'shell)
 (global-set-key (kbd "C-c t") 'term)
@@ -208,3 +210,25 @@
  '(flymake-errline ((((class color) (background dark)) (:background "gray44" :foreground "white"))))
  '(flymake-warnline ((((class color) (background dark)) (:background "gray44" :foreground "white")))))
 (put 'upcase-region 'disabled nil)
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(anything-c-adaptive-history-length 100)
+ '(flymake-log-level 2)
+ '(flymake-no-changes-timeout 0.5)
+ '(grep-command "grep -n -e ")
+ '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -print0 | xargs -0 grep -n -e ")
+ '(grep-find-ignored-files (quote (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
+ '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -print0 | xargs -0 -e grep <C> -n -e <R>")
+ '(grep-highlight-matches (quote always))
+ '(grep-scroll-output nil)
+ '(inhibit-startup-screen t)
+ '(initial-buffer-choice "~/")
+ '(locate-command "locate --regex")
+ '(php-mode-force-pear t)
+ '(remote-shell-program "zsh")
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify))
+ '(uniquify-min-dir-content 0))
