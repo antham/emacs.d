@@ -134,9 +134,21 @@
 (show-paren-mode 1)
 
 (require 'auto-complete-config)
-(require 'ac-dabbrev)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
+
+(setq-default ac-sources 
+	      (list ac-source-filename
+		    ac-source-functions
+		    ac-source-variables
+		    ac-source-symbols
+		    ac-source-abbrev
+		    ac-source-files-in-current-dir
+		    ac-source-filename
+		    ac-source-words-in-buffer
+		    ac-source-words-in-all-buffer
+		    ac-source-dictionary
+		    ))
 
 (require 'yasnippet)
 (yas/initialize)
@@ -162,9 +174,9 @@
 
 (autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
 
-  (add-hook 'js2-mode-hook 'js2-custom-setup)
-  (defun js2-custom-setup ()
-    (moz-minor-mode 1))
+(add-hook 'js2-mode-hook 'js2-custom-setup)
+(defun js2-custom-setup ()
+  (moz-minor-mode 1))
 
 ;;## Keybinding
 
@@ -192,10 +204,10 @@
 
 
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:foreground "gray" :underline t))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
@@ -212,10 +224,10 @@
 (put 'upcase-region 'disabled nil)
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
