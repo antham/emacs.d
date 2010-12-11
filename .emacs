@@ -240,6 +240,7 @@
  '(inhibit-startup-screen t)
  '(initial-buffer-choice "~/")
  '(locate-command "locate --regex")
+ '(make-backup-files nil)
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
