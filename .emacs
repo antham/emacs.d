@@ -1,6 +1,8 @@
 (server-start)
 ;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/functions"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/macros"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 
@@ -178,6 +180,7 @@
 (defun js2-custom-setup ()
   (moz-minor-mode 1))
 
+(require 'symfony2)
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
@@ -195,7 +198,7 @@
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
-(global-set-key (kbd "C-c s") 'shell)
+(global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c t") 'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
