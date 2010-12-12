@@ -8,6 +8,9 @@
 
 ;;## Coding part
 
+(require 'zencoding-mode)
+(add-hook 'sgml-mode-hook 'zencoding-mode)
+
 (require 'git)
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
