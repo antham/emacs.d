@@ -248,6 +248,7 @@
  '(icomplete-mode t)
  '(inhibit-startup-screen t)
  '(initial-buffer-choice "~/")
+ '(js2-mirror-mode nil)
  '(locate-command "locate --regex")
  '(make-backup-files nil)
  '(partial-completion-mode nil)
