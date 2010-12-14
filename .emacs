@@ -4,6 +4,7 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/functions"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/macros"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/jabber")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 
 ;;## Coding part
@@ -184,6 +185,8 @@
   (moz-minor-mode 1))
 
 (require 'symfony2)
+
+(require 'jabber)
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
