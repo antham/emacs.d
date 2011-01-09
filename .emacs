@@ -1,8 +1,8 @@
 (server-start)
 ;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/functions"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/macros"))
+(add-to-list 'load-path "~/.emacs.d/functions")
+(add-to-list 'load-path "~/.emacs.d/macros")
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/jabber")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
@@ -187,6 +187,9 @@
 (require 'symfony2)
 
 (require 'jabber)
+
+(require 'w3m-load)
+
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
@@ -258,5 +261,8 @@
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
  '(savehist-mode t nil (savehist))
+ '(term-input-autoexpand (quote history))
+ '(terminal-redisplay-interval 1000)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
- '(uniquify-min-dir-content 0))
+ '(uniquify-min-dir-content 0)
+ '(w3m-home-page "http://google.fr"))
