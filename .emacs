@@ -189,6 +189,9 @@
 (require 'jabber)
 
 (require 'w3m-load)
+ (setq browse-url-browser-function 'browse-url-generic
+       browse-url-generic-program "/usr/bin/conkeror")
+
 
 ;;## Keybinding
 
@@ -209,6 +212,7 @@
 (global-set-key (kbd "C-c l") 'locate-anything)
 (global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c t") 'term)
+(global-set-key (kbd "C-c u") 'browse-url)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
