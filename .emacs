@@ -265,4 +265,5 @@
  '(terminal-redisplay-interval 1000)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(uniquify-min-dir-content 0)
- '(w3m-home-page "http://google.fr"))
+ '(w3m-home-page "http://google.fr")
+ '(w3m-user-agent "Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1"))
