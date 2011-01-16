@@ -189,8 +189,8 @@
 (require 'jabber)
 
 (require 'w3m-load)
- (setq browse-url-browser-function 'browse-url-generic
-       browse-url-generic-program "/usr/bin/conkeror")
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/conkeror")
 
 
 ;;## Keybinding
@@ -212,19 +212,25 @@
 (global-set-key (kbd "C-c l") 'locate-anything)
 (global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c t") 'term)
-(global-set-key (kbd "C-c u b") 'browse-url)
-(global-set-key (kbd "C-c u s") 'w3m-search)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
+(add-hook 'w3m-mode-hook
+	  '(lambda ()
+	     (define-key w3m-mode-map "l" 'w3m-go-to-linknum)
+	     (define-key w3m-mode-map "c" 'w3m-submit-form)
+	     (define-key w3m-mode-map "C" 'w3m-print-current-url)))
+
+
+;;## Custom from customize group menu
 
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:foreground "gray" :underline t))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
@@ -241,10 +247,10 @@
 (put 'upcase-region 'disabled nil)
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
