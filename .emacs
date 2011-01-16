@@ -219,7 +219,7 @@
 
 (add-hook 'w3m-mode-hook
 	  '(lambda ()
-	     (define-key w3m-mode-map "l" 'w3m-go-to-linknum)
+	     (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
 	     (define-key w3m-mode-map "c" 'w3m-submit-form)
 	     (define-key w3m-mode-map "C" 'w3m-print-current-url)))
 
