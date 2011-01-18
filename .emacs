@@ -116,7 +116,10 @@
 		     (mode . css-mode)
 		     (mode . php-mode)
 		     (mode . yaml-mode)))
-	 )))
+	 
+	 ("W3m" (mode . w3m-mode))
+	)
+	))
 
 (add-hook 'ibuffer-mode-hook
 	  '(lambda ()
