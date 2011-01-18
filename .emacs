@@ -1,11 +1,14 @@
 (server-start)
 ;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-(add-to-list 'load-path "~/.emacs.d/functions")
-(add-to-list 'load-path "~/.emacs.d/macros")
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/jabber")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
+
+(load-file "~/.emacs.d/functions/symfony2.el")
+(load-file "~/.emacs.d/functions/insert-gpl3.el")
+(load-file "~/.emacs.d/macros/w3m.el")
+(load-file "~/.emacs.d/macros/accessor.el")
 
 ;;## Coding part
 
@@ -213,6 +216,8 @@
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
+(global-set-key (kbd "C-c o p") 'google-previous)
+(global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c t") 'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
