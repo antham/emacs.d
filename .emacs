@@ -235,6 +235,7 @@
 	     (define-key w3m-mode-map "c" 'w3m-submit-form)
 	     (define-key w3m-mode-map "C" 'w3m-print-current-url)))
 
+(global-set-key (kbd "C-c C-j") 'term-line-mode)
 
 ;;## Custom from customize group menu
 
