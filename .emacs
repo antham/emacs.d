@@ -121,6 +121,7 @@
 		     (mode . yaml-mode)))
 	 
 	 ("W3m" (mode . w3m-mode))
+	 ("Terminal" (mode . term-mode))
 	)
 	))
 
@@ -198,6 +199,7 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/conkeror")
 
+(require 'multi-term)
 
 ;;## Keybinding
 
@@ -219,7 +221,9 @@
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c s") 'eshell)
-(global-set-key (kbd "C-c t") 'term)
+(global-set-key (kbd "C-c t c") 'multi-term)
+(global-set-key (kbd "C-c t n") 'multi-term-next)
+(global-set-key (kbd "C-c t p") 'multi-term-prev)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
