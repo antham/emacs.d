@@ -199,8 +199,6 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/conkeror")
 
-(require 'multi-term)
-
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
@@ -215,15 +213,13 @@
 (global-set-key (kbd "C-c f n") 'find-name-dired)
 (global-set-key (kbd "C-c g b") 'grep-buffers)
 (global-set-key (kbd "C-c g f") 'grep-find)
+(global-set-key (kbd "C-c g g") 'grep)
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c s") 'eshell)
-(global-set-key (kbd "C-c t c") 'multi-term)
-(global-set-key (kbd "C-c t n") 'multi-term-next)
-(global-set-key (kbd "C-c t p") 'multi-term-prev)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
@@ -240,10 +236,10 @@
 ;;## Custom from customize group menu
 
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:foreground "gray" :underline t))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
@@ -260,17 +256,17 @@
 (put 'upcase-region 'disabled nil)
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
- '(grep-command "grep -n -e ")
- '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -print0 | xargs -0 grep -n -e ")
+ '(grep-command "grep --color --exclude TAGS --exclude .gitmodules --exclude-dir *git* -nsH2re ")
+ '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -print0 | xargs -0 grep -n -e ")
  '(grep-find-ignored-files (quote (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
- '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -print0 | xargs -0 -e grep <C> -n -e <R>")
+ '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -print0 | xargs -0 -e grep <C> -n -e <R>")
  '(grep-highlight-matches (quote always))
  '(grep-scroll-output nil)
  '(history-delete-duplicates nil)
