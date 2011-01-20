@@ -263,7 +263,7 @@
  '(anything-c-adaptive-history-length 100)
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
- '(grep-command "grep --color --exclude TAGS --exclude .gitmodules --exclude-dir *git* -nsH2re ")
+ '(grep-command "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude-dir=\"*git*\" -nsH2re ")
  '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -print0 | xargs -0 grep -n -e ")
  '(grep-find-ignored-files (quote (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
  '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -print0 | xargs -0 -e grep <C> -n -e <R>")
