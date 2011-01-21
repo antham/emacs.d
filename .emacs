@@ -261,6 +261,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
+ '(anything-command-map-prefix-key "M-n")
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
  '(grep-command "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude-dir=\"*git*\" -nsH2re ")
