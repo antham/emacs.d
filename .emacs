@@ -86,10 +86,12 @@
 (defun base-anything()
   (interactive)
   (anything-other-buffer
-   '(anything-c-source-buffers
+   '(anything-c-source-buffers+
      anything-c-source-recentf
+     anything-c-source-mark-ring
      anything-c-source-file-name-history
-     anything-c-source-files-in-current-dir)
+     anything-c-source-files-in-current-dir+
+     anything-c-source-imenu)
    " *base-anything*"))
 
 (defun file-anything()
@@ -97,7 +99,7 @@
   (anything-other-buffer
    '(anything-c-source-occur
      anything-c-source-browse-code
-     anything-c-source-kill-ring)
+     anything-c-source-global-mark-ring)
    " *file-anything*"))
 
 (defun locate-anything()
@@ -261,7 +263,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
- '(anything-command-map-prefix-key "M-n")
+ '(anything-command-map-prefix-key "M-<down>")
  '(flymake-log-level 2)
  '(flymake-no-changes-timeout 0.5)
  '(grep-command "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude-dir=\"*git*\" -nsH2re ")
