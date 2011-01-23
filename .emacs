@@ -219,6 +219,7 @@
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
+(global-set-key (kbd "C-c m") 'multi-occur)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c s") 'eshell)
