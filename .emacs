@@ -210,7 +210,6 @@
 (global-set-key (kbd "C-c a") 'ack)
 (global-set-key (kbd "C-c b") 'switch-to-buffer)
 (global-set-key (kbd "C-c e") 'yas/expand)
-(global-set-key (kbd "C-c f a") 'file-anything)
 (global-set-key (kbd "C-c f d") 'find-dired)
 (global-set-key (kbd "C-c f g") 'find-grep-dired)
 (global-set-key (kbd "C-c f n") 'find-name-dired)
@@ -230,6 +229,7 @@
 
 (global-set-key (kbd "C-M-,") 'cycle-buffer)
 (global-set-key (kbd "C-M-;") 'globalff)
+(global-set-key (kbd "C-M-:") 'file-anything)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
