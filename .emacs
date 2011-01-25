@@ -134,6 +134,8 @@
 
 (setq ibuffer-expert t)
 
+(autoload 'cycle-buffer "cycle-buffer" "Cycle forward." t)
+
 ;;## Edition functionality
 
 (column-number-mode t)
@@ -225,6 +227,8 @@
 (global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
+
+(global-set-key (kbd "C-M-,") 'cycle-buffer)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
