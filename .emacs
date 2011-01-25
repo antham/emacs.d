@@ -81,6 +81,7 @@
 (require 'anything-traverse)
 (require 'etags-select)
 (require 'dired+)
+(require 'globalff)
 (toggle-dired-find-file-reuse-dir t)
 
 (defun base-anything()
@@ -135,6 +136,8 @@
 (setq ibuffer-expert t)
 
 (autoload 'cycle-buffer "cycle-buffer" "Cycle forward." t)
+
+(globalff-toggle-regexp-search t)
 
 ;;## Edition functionality
 
@@ -229,6 +232,7 @@
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "C-M-,") 'cycle-buffer)
+(global-set-key (kbd "C-M-;") 'globalff)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
