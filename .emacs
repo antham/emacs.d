@@ -70,7 +70,6 @@
 
 ;;## Manage buffers and files
 
-;; (require 'icicles)
 (require 'grep-buffers)
 (require 'ack)
 (require 'find-recursive)
