@@ -72,7 +72,6 @@
 
 (require 'grep-buffers)
 (require 'ack)
-(require 'find-recursive)
 (require 'traverselisp)
 (require 'anything)
 (require 'anything-config)
