@@ -77,6 +77,7 @@
 (require 'anything-config)
 (require 'anything-match-plugin)
 (require 'anything-traverse)
+(require 'anything-c-moccur)
 (require 'etags-select)
 (require 'dired+)
 (require 'globalff)
@@ -219,7 +220,7 @@
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
 (global-set-key (kbd "C-c l") 'locate-anything)
-(global-set-key (kbd "C-c m") 'multi-occur)
+(global-set-key (kbd "C-c m d") 'anything-c-moccur-dmoccur)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c t") 'term)
@@ -227,7 +228,7 @@
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
-(global-set-key (kbd "C-M-,") 'cycle-buffer)
+(global-set-key (kbd "C-M-,") 'anything-c-moccur-occur-by-moccur)
 (global-set-key (kbd "C-M-;") 'globalff)
 (global-set-key (kbd "C-M-:") 'file-anything)
 
@@ -238,6 +239,10 @@
 	     (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
 	     (define-key w3m-mode-map "c" 'w3m-submit-form)
 	     (define-key w3m-mode-map "C" 'w3m-print-current-url)))
+
+(add-hook 'dired-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
 
 (global-set-key (kbd "C-c C-j") 'term-line-mode)
 
