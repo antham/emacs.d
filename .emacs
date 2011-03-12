@@ -203,6 +203,9 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/conkeror")
 
+(require 'xclip)
+(turn-on-xclip)
+
 ;;## Keybinding
 
 (global-set-key (kbd "C-x b") 'base-anything)
