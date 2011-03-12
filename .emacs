@@ -71,7 +71,6 @@
 ;;## Manage buffers and files
 
 (require 'grep-buffers)
-(require 'ack)
 (require 'traverselisp)
 (require 'anything)
 (require 'anything-config)
@@ -211,7 +210,6 @@
 (global-set-key (kbd "C-x b") 'base-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-(global-set-key (kbd "C-c a") 'ack)
 (global-set-key (kbd "C-c b") 'switch-to-buffer)
 (global-set-key (kbd "C-c e") 'yas/expand)
 (global-set-key (kbd "C-c f d") 'find-dired)
@@ -231,9 +229,9 @@
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
-(global-set-key (kbd "C-M-,") 'anything-c-moccur-occur-by-moccur)
 (global-set-key (kbd "C-M-;") 'globalff)
 (global-set-key (kbd "C-M-:") 'file-anything)
+(global-set-key (kbd "C-M-,") 'anything-c-moccur-buffer-list)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
