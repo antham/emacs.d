@@ -2,7 +2,7 @@
 ;;## Library path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
-(add-to-list 'load-path "~/.emacs.d/jabber")
+;; (add-to-list 'load-path "~/.emacs.d/jabber")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 
 (load-file "~/.emacs.d/functions/symfony2.el")
@@ -87,25 +87,19 @@
   (anything-other-buffer
    '(anything-c-source-buffers+
      anything-c-source-recentf
+     anything-c-source-occur
      anything-c-source-mark-ring
-     anything-c-source-file-name-history
-     anything-c-source-files-in-current-dir+
-     anything-c-source-imenu)
+     anything-c-source-global-mark-ring
+     anything-c-source-locate
+)
    " *base-anything*"))
 
-(defun file-anything()
-  (interactive)
-  (anything-other-buffer
-   '(anything-c-source-occur
-     anything-c-source-browse-code
-     anything-c-source-global-mark-ring)
-   " *file-anything*"))
+(remove-hook 'kill-emacs-hook 'anything-c-adaptive-save-history)
+(setq anything-quick-update t)
 
-(defun locate-anything()
-  (interactive)
-  (anything-other-buffer
-   '(anything-c-source-locate)
-   " *locate-anything*"))
+(setq anything-idle-delay 0.9)
+(setq anything-input-idle-delay 0.4)
+(setq anything-samewindow t)
 
 (ido-mode t)
 
@@ -196,7 +190,7 @@
 
 (require 'symfony2)
 
-(require 'jabber)
+;;(require 'jabber)
 
 (require 'w3m-load)
 (setq browse-url-browser-function 'browse-url-generic
@@ -220,7 +214,6 @@
 (global-set-key (kbd "C-c g g") 'grep)
 (global-set-key (kbd "C-c h a") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c h f") 'etags-select-find-tag)
-(global-set-key (kbd "C-c l") 'locate-anything)
 (global-set-key (kbd "C-c m d") 'anything-c-moccur-dmoccur)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
@@ -230,8 +223,6 @@
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 
 (global-set-key (kbd "C-c ,") 'globalff)
-(global-set-key (kbd "C-c ;") 'file-anything)
-(global-set-key (kbd "C-c :") 'anything-c-moccur-buffer-list)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
