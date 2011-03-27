@@ -1,3 +1,5 @@
 *.elc
 *~
 projects/*.el
+ac-comphist.dat
+tramp
