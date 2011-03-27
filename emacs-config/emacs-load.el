@@ -1,0 +1,21 @@
+(server-start)
+;;## Library path
+;; (add-to-list 'load-path "~/.emacs.d/jabber")
+;; (add-to-list 'load-path "~/.emacs.d/icicles")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/anything-config"))
+
+(load-file "~/.emacs.d/functions/symfony2.el")
+(load-file "~/.emacs.d/functions/insert-gpl3.el")
+(load-file "~/.emacs.d/macros/w3m.el")
+(load-file "~/.emacs.d/macros/accessor.el")
+
+(load-file "~/.emacs.d/emacs-config/emacs-appearance.el")
+(load-file "~/.emacs.d/emacs-config/emacs-buffers-and-files.el")
+(load-file "~/.emacs.d/emacs-config/emacs-coding-part.el")
+(load-file "~/.emacs.d/emacs-config/emacs-custom.el")
+(load-file "~/.emacs.d/emacs-config/emacs-edition.el")
+(load-file "~/.emacs.d/emacs-config/emacs-key.el")
+(load-file "~/.emacs.d/emacs-config/emacs-perso.el")
+(load-file "~/.emacs.d/emacs-config/emacs-remain.el")
