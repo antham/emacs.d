@@ -9,6 +9,7 @@
 
 (require 'anything)
 (require 'anything-config)
+(require 'anything-ack)
 (require 'anything-match-plugin)
 (require 'anything-traverse)
 (require 'anything-c-moccur)
