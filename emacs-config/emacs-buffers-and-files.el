@@ -1,13 +1,3 @@
-(require 'grep-buffers)
-(require 'traverselisp)
-(require 'anything)
-(require 'anything-config)
-(require 'anything-match-plugin)
-(require 'anything-traverse)
-(require 'anything-c-moccur)
-(require 'etags-select)
-(require 'dired+)
-(require 'globalff)
 (toggle-dired-find-file-reuse-dir t)
 
 (defun base-anything()
@@ -31,7 +21,6 @@
 
 (ido-mode t)
 
-(require 'backup-each-save)
 (add-hook 'after-save-hook 'backup-each-save)
 
 (setq ibuffer-saved-filter-groups

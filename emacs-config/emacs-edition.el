@@ -1,16 +1,9 @@
 (column-number-mode t)
 (global-linum-mode)
 
-(require 'show-wspace)
-
-(require 'browse-kill-ring)
-(require 'browse-kill-ring+)
-
-(require 'autopair)
 (autopair-global-mode 1)
 (show-paren-mode 1)
 
-(require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
@@ -27,7 +20,6 @@
 		    ac-source-dictionary
 		    ))
 
-(require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet/snippets")
 

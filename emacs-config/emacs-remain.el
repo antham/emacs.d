@@ -17,13 +17,7 @@
 (defun js2-custom-setup ()
   (moz-minor-mode 1))
 
-(require 'symfony2)
-
-;;(require 'jabber)
-
-(require 'w3m-load)
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/conkeror")
 
-(require 'xclip)
 (turn-on-xclip)
