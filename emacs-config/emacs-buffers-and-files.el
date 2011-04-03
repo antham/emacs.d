@@ -31,6 +31,9 @@
 		     (mode . js2-mode)
 		     (mode . html-mode)
 		     (mode . css-mode)
+		     (mode . c++-mode)
+		     (mode . c-mode)
+		     (mode . perl-mode)
 		     (mode . php-mode)
 		     (mode . yaml-mode)))
 	 
