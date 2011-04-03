@@ -1,5 +1,7 @@
 (toggle-dired-find-file-reuse-dir t)
 
+(setq password-cache-expiry nil)
+
 (defun base-anything()
   (interactive)
   (anything-other-buffer
