@@ -5,6 +5,7 @@
     (list "php" (list "-f" local "-l"))))
 
 (defun coding-hook ()
+  (autopair-mode)
   )
 
 (autoload 'js2-mode "js2" nil t)
@@ -21,11 +22,15 @@
 	     '("\\(Parse\\|Fatal\\) error: +\\(.*?\\) in \\(.*?\\) on line \\([0-9]+\\)$" 3 4 nil 2))
 (add-to-list 'flymake-allowed-file-name-masks '("\\.php$" flymake-php-init))
 
+(add-hook 'c-mode-common-hook 'coding-hook)
+(add-hook 'c++-mode-common-hook 'coding-hook)
 (add-hook 'css-mode-hook 'coding-hook)
+(add-hook 'emacs-lisp-mode-hook 'coding-hook)
 (add-hook 'html-mode-hook 'coding-hook)
 (add-hook 'js2-mode-hook 'coding-hook)
 (add-hook 'php-mode-hook 'coding-hook)
 (add-hook 'python-mode-hook 'coding-hook)
-(add-hook 'yaml-mode-hook 'coding-hook)
 (add-hook 'sgml-mode-hook 'zencoding-mode)
+(add-hook 'yaml-mode-hook 'coding-hook)
+
 (add-hook 'php-mode-hook (lambda () (flymake-mode 1)))

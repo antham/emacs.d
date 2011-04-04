@@ -1,7 +1,6 @@
 (column-number-mode t)
 (global-linum-mode)
 
-(autopair-global-mode 1)
 (show-paren-mode 1)
 
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
