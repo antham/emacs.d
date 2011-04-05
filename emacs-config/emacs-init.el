@@ -1,10 +1,12 @@
 (server-start)
+
 ;;## Library path
 ;; (add-to-list 'load-path "~/.emacs.d/jabber")
 ;; (add-to-list 'load-path "~/.emacs.d/icicles")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/anything-config"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/mk-project"))
 
 (require 'anything)
@@ -26,6 +28,7 @@
 (require 'globalff)
 (require 'grep-buffers)
 ;;(require 'jabber)
+(require 'magit)
 (require 'mk-project)
 (require 'show-wspace)
 (require 'traverselisp)

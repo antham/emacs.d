@@ -7,3 +7,6 @@
 [submodule "mk-project"]
 	path = mk-project
 	url = git://github.com/mattkeller/mk-project.git
+[submodule "magit"]
+	path = magit
+	url = git://github.com/philjackson/magit.git
