@@ -1,13 +1,12 @@
 (server-start)
 
 ;;## Library path
-;; (add-to-list 'load-path "~/.emacs.d/jabber")
-;; (add-to-list 'load-path "~/.emacs.d/icicles")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/anything-config"))
+;; (add-to-list 'load-path "~/.emacs.d/jabber")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/mk-project"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
 
 (require 'anything)
 (require 'anything-config)
