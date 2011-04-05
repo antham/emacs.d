@@ -44,7 +44,7 @@
 (load-file "~/.emacs.d/emacs-config/emacs-custom.el")
 (load-file "~/.emacs.d/emacs-config/emacs-edition.el")
 (load-file "~/.emacs.d/emacs-config/emacs-key.el")
+(load-file "~/.emacs.d/emacs-config/emacs-misc.el")
 (load-file "~/.emacs.d/emacs-config/emacs-perso.el")
-(load-file "~/.emacs.d/emacs-config/emacs-remain.el")
 
 (load-file "~/.emacs.d/projects/init.el")
