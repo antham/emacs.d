@@ -22,5 +22,5 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet/snippets")
 
-(set-default 'indicate-empty-lines t)
+(setq-default indicate-empty-lines t)
 (setq x-select-enable-clipboard t)
