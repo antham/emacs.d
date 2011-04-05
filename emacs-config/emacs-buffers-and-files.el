@@ -48,5 +48,3 @@
 	     (ibuffer-switch-to-saved-filter-groups "Groups")))
 
 (setq ibuffer-expert t)
-
-(autoload 'cycle-buffer "cycle-buffer" "Cycle forward." t)
