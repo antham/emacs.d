@@ -1,7 +1,8 @@
 (global-set-key (kbd "C-x b") 'base-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-(global-set-key (kbd "C-c a") 'anything-ack)
+(global-set-key (kbd "C-c a a") 'anything-ack)
+(global-set-key (kbd "C-c a c") 'ack)
 (global-set-key (kbd "C-c b") 'switch-to-buffer)
 (global-set-key (kbd "C-c e") 'yas/expand)
 (global-set-key (kbd "C-c f d") 'find-dired)

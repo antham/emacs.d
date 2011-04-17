@@ -8,6 +8,7 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
 
+(require 'ack)
 (require 'anything)
 (require 'anything-config)
 (require 'anything-ack)
