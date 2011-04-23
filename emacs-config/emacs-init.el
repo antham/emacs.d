@@ -6,6 +6,7 @@
 ;; (add-to-list 'load-path "~/.emacs.d/jabber")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/mk-project"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/switch-window"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
 
 (require 'ack)
@@ -32,6 +33,7 @@
 (require 'magit)
 (require 'mk-project)
 (require 'show-wspace)
+(require 'switch-window)
 (require 'traverselisp)
 (require 'w3m-load)
 (require 'xclip)

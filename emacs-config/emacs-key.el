@@ -50,3 +50,6 @@
              (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
 
 (global-set-key (kbd "C-c C-j") 'term-line-mode)
+
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings 'meta))

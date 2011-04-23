@@ -10,3 +10,6 @@
 [submodule "magit"]
 	path = magit
 	url = git://github.com/philjackson/magit.git
+[submodule "switch-window"]
+	path = switch-window
+	url = git://github.com/dimitri/switch-window.git
