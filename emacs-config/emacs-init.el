@@ -31,7 +31,7 @@
 (require 'grep-buffers)
 ;;(require 'jabber)
 (require 'magit)
-(require 'mk-project)
+(require 'mk-project-anything)
 (require 'show-wspace)
 (require 'switch-window)
 (require 'traverselisp)

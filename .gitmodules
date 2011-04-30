@@ -6,7 +6,7 @@
 	url = git://repo.or.cz/anything-config.git
 [submodule "mk-project"]
 	path = mk-project
-	url = git://github.com/mattkeller/mk-project.git
+	url = git://github.com/rakete/mk-project.git
 [submodule "magit"]
 	path = magit
 	url = git://github.com/philjackson/magit.git
