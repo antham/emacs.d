@@ -1,15 +1,15 @@
-[submodule "auto-complete"]
-	path = auto-complete
+[submodule "library/auto-complete/auto-complete"]
+	path = library/auto-complete/auto-complete
 	url = git://github.com/m2ym/auto-complete.git
-[submodule "anything-config"]
-	path = anything-config
+[submodule "library/anything/anything-config"]
+	path = library/anything/anything-config
 	url = git://repo.or.cz/anything-config.git
-[submodule "mk-project"]
-	path = mk-project
+[submodule "library/mk-project"]
+	path = library/mk-project
 	url = git://github.com/rakete/mk-project.git
-[submodule "magit"]
-	path = magit
+[submodule "library/magit"]
+	path = library/magit
 	url = git://github.com/philjackson/magit.git
-[submodule "switch-window"]
-	path = switch-window
+[submodule "library/switch-window"]
+	path = library/switch-window
 	url = git://github.com/dimitri/switch-window.git

@@ -3,7 +3,7 @@
 
 (show-paren-mode 1)
 
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/library/auto-complete/ac-dict")
 (ac-config-default)
 
 (setq-default ac-sources 
@@ -20,7 +20,7 @@
 		    ))
 
 (yas/initialize)
-(yas/load-directory "~/.emacs.d/yasnippet/snippets")
+(yas/load-directory "~/.emacs.d/library/yasnippet/snippets")
 
 (setq-default indicate-empty-lines t)
 (setq x-select-enable-clipboard t)

@@ -1,13 +1,15 @@
 (server-start)
 
 ;;## Library path
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/anything-config"))
-;; (add-to-list 'load-path "~/.emacs.d/jabber")
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/magit"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/mk-project"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/switch-window"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/yasnippet"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything/anything-config"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete"))
+;; (add-to-list 'load-path "~/.emacs.d/library/jabber")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/magit"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/switch-window"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
 (require 'ack)
 (require 'anything)
