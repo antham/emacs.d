@@ -37,6 +37,10 @@
 (global-set-key (kbd "C-c p d") 'project-dired)
 (global-set-key (kbd "C-c p t") 'project-tags)
 
+(global-set-key (kbd "C-%") 'split-window-horizontally)
+(global-set-key (kbd "C-:") 'split-window-vertically)
+(global-set-key (kbd "C-!") 'delete-window)
+(global-set-key (kbd "C-*") 'delete-other-windows)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
