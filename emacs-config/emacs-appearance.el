@@ -5,4 +5,4 @@
 (set-cursor-color "yellow")
 
 (color-theme-initialize)
-(color-theme-arjen)
+(color-theme-billw)
