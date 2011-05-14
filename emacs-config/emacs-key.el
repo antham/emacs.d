@@ -42,6 +42,11 @@
 (global-set-key (kbd "C-!") 'delete-window)
 (global-set-key (kbd "C-*") 'delete-other-windows)
 
+(define-key global-map (kbd "C-<up>"   ) 'windmove-up)
+(define-key global-map (kbd "C-<down>" ) 'windmove-down)
+(define-key global-map (kbd "C-<right>") 'windmove-right)
+(define-key global-map (kbd "C-<left>" ) 'windmove-left)
+
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
 (add-hook 'w3m-mode-hook
@@ -55,6 +60,3 @@
              (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
 
 (global-set-key (kbd "C-c C-j") 'term-line-mode)
-
-(when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings 'meta))
