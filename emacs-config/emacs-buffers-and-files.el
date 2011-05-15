@@ -27,14 +27,15 @@
 
 (setq ibuffer-saved-filter-groups
       '(("Groups"
-	 ("Code" (or (mode . python-mode)
-		     (mode . js2-mode)
+	 ("Code" (or (mode . js2-mode)
 		     (mode . html-mode)
 		     (mode . css-mode)
 		     (mode . c++-mode)
 		     (mode . c-mode)
+		     (mode . lisp-mode)
 		     (mode . perl-mode)
 		     (mode . php-mode)
+		     (mode . python-mode)
 		     (mode . yaml-mode)))
 	 
 	 ("W3m" (mode . w3m-mode))
