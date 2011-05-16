@@ -25,7 +25,7 @@
 (add-hook 'c-mode-hook 'coding-hook)
 (add-hook 'c++-mode-hook 'coding-hook)
 (add-hook 'css-mode-hook 'coding-hook)
-(add-hook 'emacs-lisp-mode-hook 'coding-hook)
+(add-hook 'lisp-mode-hook 'coding-hook)
 (add-hook 'html-mode-hook 'coding-hook)
 (add-hook 'js2-mode-hook 'coding-hook)
 (add-hook 'perl-mode-hook 'coding-hook)
