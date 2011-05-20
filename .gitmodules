@@ -13,3 +13,6 @@
 [submodule "library/switch-window"]
 	path = library/switch-window
 	url = git://github.com/dimitri/switch-window.git
+[submodule "library/backup-system"]
+	path = library/backup-system
+	url = git@github-ssplomb:sansplomb95/backup-system.git

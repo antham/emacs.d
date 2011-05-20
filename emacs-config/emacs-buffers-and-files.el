@@ -23,8 +23,6 @@
 
 (ido-mode t)
 
-(add-hook 'after-save-hook 'backup-each-save)
-
 (setq ibuffer-saved-filter-groups
       '(("Groups"
 	 ("Code" (or (mode . js2-mode)
