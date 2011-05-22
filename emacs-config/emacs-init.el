@@ -35,6 +35,7 @@
 (require 'grep-buffers)
 ;;(require 'jabber)
 (require 'magit)
+(require 'mime-w3m)
 (require 'mk-project-anything)
 (require 'show-wspace)
 (require 'switch-window)
