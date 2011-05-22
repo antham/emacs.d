@@ -6,6 +6,7 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything/anything-config"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/color-theme"))
 ;; (add-to-list 'load-path "~/.emacs.d/library/jabber")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
