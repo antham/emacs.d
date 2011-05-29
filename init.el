@@ -31,6 +31,7 @@
  '(terminal-redisplay-interval 1000)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(uniquify-min-dir-content 0)
+ '(use-file-dialog nil)
  '(viper-insert-state-cursor-color "Yellow")
  '(w3m-home-page "http://google.fr")
  '(w3m-user-agent "Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1"))
@@ -39,7 +40,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(ac-completion-face ((t (:foreground "gray" :underline t))))
+ '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
