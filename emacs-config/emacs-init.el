@@ -45,6 +45,7 @@
 (require 'traverselisp)
 (require 'w3m-load)
 (require 'wgrep)
+(require 'ws-trim)
 (require 'xclip)
 (require 'yaml-mode)
 (require 'yasnippet)
