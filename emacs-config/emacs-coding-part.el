@@ -17,7 +17,12 @@
   (c-set-offset 'case-label '+)
   (c-set-offset 'arglist-close 'c-lineup-arglist-operators)
   (c-set-offset 'arglist-intro '+)
-  (c-set-offset 'arglist-cont-nonempty 'c-lineup-math))
+  (c-set-offset 'arglist-cont-nonempty 'c-lineup-math)
+)
+
+(defun html-four-space ()
+  (set (make-local-variable 'sgml-basic-offset) 4)
+)
 
 (defun coding-hook ()
   (autopair-mode)
