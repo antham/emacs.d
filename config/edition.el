@@ -11,7 +11,8 @@
 (setq-default ac-sources
 	      '(ac-source-functions
 	       ac-source-variables
-	       ac-source-symbols
+               ac-source-symbols
+               ac-source-dabbrev
 	       ac-source-files-in-current-dir
 	       ac-source-filename
 	       ac-source-words-in-buffer

@@ -40,6 +40,8 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))))
+ '(ac-dabbrev-menu-face ((t (:background "lightgray" :foreground "purple"))))
+ '(ac-dabbrev-selection-face ((t (:background "purple" :foreground "white"))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
@@ -61,23 +63,3 @@
  '(magit-header ((t (:foreground "yellow"))))
  '(magit-log-message ((t (:foreground "white" :weight bold))))
  '(magit-section-title ((t (:inherit nil :foreground "orange" :weight bold)))))
-
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ac-completion-face ((t (:foreground "gray" :underline t))))
- '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
- '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
- '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
- '(diredp-dir-priv ((t (:background "LightGray" :foreground "DarkRed" :underline "red" :weight extra-bold))))
- '(diredp-display-msg ((t (:background "Orange" :foreground "Blue" :weight bold))))
- '(diredp-executable-tag ((t (:background "White" :foreground "Red" :weight bold))))
- '(diredp-file-name ((t (:background "Grey" :foreground "Blue" :weight bold))))
- '(diredp-file-suffix ((t (:background "Grey" :foreground "Black" :weight bold))))
- '(diredp-inode+size ((t (:background "Grey" :foreground "DarkGreen" :weight bold))))
- '(diredp-symlink ((t (:background "White" :foreground "DarkOrange" :weight bold))))
- '(flymake-errline ((((class color) (background dark)) (:background "gray44" :foreground "white"))))
- '(flymake-warnline ((((class color) (background dark)) (:background "gray44" :foreground "white")))))
-(put 'upcase-region 'disabled nil)

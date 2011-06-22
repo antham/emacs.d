@@ -15,6 +15,7 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/undo-tree"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
+(require 'ac-dabbrev)
 (require 'ack)
 (require 'anything)
 (require 'anything-config)

@@ -40,6 +40,8 @@
 (global-set-key (kbd "C-, d") 'project-dired)
 (global-set-key (kbd "C-, t") 'project-tags)
 
+(global-set-key (kbd "C-$") 'dabbrev-expand)
+
 (global-set-key (kbd "C-%") 'split-window-horizontally)
 (global-set-key (kbd "C-:") 'split-window-vertically)
 (global-set-key (kbd "C-!") 'delete-window)
