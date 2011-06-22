@@ -16,3 +16,6 @@
 [submodule "library/backup-system"]
 	path = library/backup-system
 	url = git@github-ssplomb:sansplomb95/backup-system.git
+[submodule "library/undo-tree"]
+	path = library/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
