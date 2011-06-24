@@ -1,6 +1,6 @@
 (server-start)
 
-;;## Library path
+;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything/anything-config"))
@@ -58,6 +58,7 @@
 (load-file "~/.emacs.d/functions/misc.el")
 (load-file "~/.emacs.d/functions/indent.el")
 
+;; Configuration
 (load-file "~/.emacs.d/config/appearance.el")
 (load-file "~/.emacs.d/config/buffers-and-files.el")
 (load-file "~/.emacs.d/config/coding.el")
