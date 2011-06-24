@@ -54,6 +54,10 @@
 (require 'yasnippet)
 (require 'zencoding-mode)
 
+;; Functions
+(load-file "~/.emacs.d/functions/misc.el")
+(load-file "~/.emacs.d/functions/indent.el")
+
 (load-file "~/.emacs.d/config/appearance.el")
 (load-file "~/.emacs.d/config/buffers-and-files.el")
 (load-file "~/.emacs.d/config/coding.el")
