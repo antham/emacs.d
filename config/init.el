@@ -56,7 +56,7 @@
 
 (load-file "~/.emacs.d/config/appearance.el")
 (load-file "~/.emacs.d/config/buffers-and-files.el")
-(load-file "~/.emacs.d/config/coding-part.el")
+(load-file "~/.emacs.d/config/coding.el")
 (load-file "~/.emacs.d/config/custom.el")
 (load-file "~/.emacs.d/config/edition.el")
 (load-file "~/.emacs.d/config/key.el")
