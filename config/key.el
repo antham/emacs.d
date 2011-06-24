@@ -52,6 +52,8 @@
 (define-key global-map (kbd "C-<right>") 'windmove-right)
 (define-key global-map (kbd "C-<left>" ) 'windmove-left)
 
+(define-key global-map (kbd "M-z" ) 'zap-up-to-char)
+
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
 (add-hook 'w3m-mode-hook
