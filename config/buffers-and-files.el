@@ -11,7 +11,7 @@
      anything-c-source-mark-ring
      anything-c-source-global-mark-ring
      anything-c-source-locate
-)
+     )
    " *base-anything*"))
 
 (remove-hook 'kill-emacs-hook 'anything-c-adaptive-save-history)
@@ -25,20 +25,28 @@
 
 (setq ibuffer-saved-filter-groups
       '(("Groups"
-	 ("Code" (or (mode . js2-mode)
+         ("Code" (or (mode . js2-mode)
+                     (mode . js-mode)
 		     (mode . html-mode)
 		     (mode . css-mode)
 		     (mode . c++-mode)
-		     (mode . c-mode)
+                     (mode . c-mode)
+                     (mode . emacs-lisp-mode)
 		     (mode . lisp-mode)
 		     (mode . perl-mode)
 		     (mode . php-mode)
 		     (mode . python-mode)
 		     (mode . yaml-mode)))
 	 
-	 ("W3m" (mode . w3m-mode))
-	 ("Terminal" (mode . term-mode))
-	)
+         ("W3m" (mode . w3m-mode))
+         ("Terminal" (mode . term-mode))
+         ("Search" (or (mode . ack-mode)
+                       (mode . grep-mode)))
+         ("Dired" (or (mode . dired-mode)))
+         ("Emacs" (or
+                   (name . "^\\*scratch\\*$")
+                   (name . "^\\*Messages\\*$")))
+	 )
 	))
 
 (add-hook 'ibuffer-mode-hook
