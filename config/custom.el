@@ -21,7 +21,6 @@
  '(initial-buffer-choice "~/")
  '(js2-mirror-mode nil)
  '(locate-command "locate --regex")
- '(make-backup-files nil)
  '(partial-completion-mode nil)
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
