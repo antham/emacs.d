@@ -20,7 +20,6 @@
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c t") 'term)
-(global-set-key (kbd "C-c s") 'eshell)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 

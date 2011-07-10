@@ -49,6 +49,7 @@
 (require 'w3m-load)
 (require 'wgrep)
 (require 'ws-trim)
+(require 'xcscope)
 (require 'xclip)
 (require 'yaml-mode)
 (require 'yasnippet)
