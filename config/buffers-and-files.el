@@ -56,7 +56,4 @@
 
 (setq ibuffer-expert t)
 
-(global-ws-trim-mode t)
-(setq ws-trim-method-hook '(ws-trim-trailing ws-trim-tabs ws-trim-leading-tabs))
-
 (global-undo-tree-mode)

@@ -17,3 +17,17 @@
 (defun html-four-space ()
   (set (make-local-variable 'sgml-basic-offset) 4)
 )
+
+(defun remove-tabs ()
+  (untabify (point-min) (point-max))
+  (save-match-data
+    (save-excursion
+      (goto-char (point-min))
+      (while (re-search-forward "\\s-$" nil t)
+	(skip-syntax-backward "-" (save-excursion (forward-line 0) (point)))
+
+	(save-match-data
+	  (if (looking-at ".*\f")
+	      (goto-char (match-end 0))))
+	(delete-region (point) (match-end 0)))))
+  )
