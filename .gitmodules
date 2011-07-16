@@ -1,21 +1,21 @@
 [submodule "library/auto-complete/auto-complete"]
-	path = library/auto-complete/auto-complete
-	url = git://github.com/m2ym/auto-complete.git
+        path = library/auto-complete/auto-complete
+        url = git://github.com/m2ym/auto-complete.git
 [submodule "library/anything/anything-config"]
-	path = library/anything/anything-config
-	url = git://repo.or.cz/anything-config.git
+        path = library/anything/anything-config
+        url = git://repo.or.cz/anything-config.git
 [submodule "library/mk-project"]
-	path = library/mk-project
-	url = git://github.com/rakete/mk-project.git
+        path = library/mk-project
+        url = git://github.com/rakete/mk-project.git
 [submodule "library/magit"]
-	path = library/magit
-	url = git://github.com/philjackson/magit.git
+        path = library/magit
+        url = git://github.com/philjackson/magit.git
 [submodule "library/switch-window"]
-	path = library/switch-window
-	url = git://github.com/dimitri/switch-window.git
+        path = library/switch-window
+        url = git://github.com/dimitri/switch-window.git
 [submodule "library/backup-system"]
-	path = library/backup-system
-	url = git@github-ssplomb:sansplomb95/backup-system.git
+        path = library/backup-system
+        url = git://github.com:sansplomb95/backup-system.git
 [submodule "library/undo-tree"]
-	path = library/undo-tree
-	url = http://www.dr-qubit.org/git/undo-tree.git
+        path = library/undo-tree
+        url = http://www.dr-qubit.org/git/undo-tree.git
