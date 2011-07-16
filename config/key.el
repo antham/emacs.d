@@ -45,6 +45,8 @@
 (global-set-key (kbd "C-:") 'split-window-vertically)
 (global-set-key (kbd "C-!") 'delete-window)
 (global-set-key (kbd "C-*") 'delete-other-windows)
+(global-set-key (kbd "C-^") 'enlarge-window)
+(global-set-key (kbd "C-=") 'enlarge-window-horizontally)
 
 (define-key global-map (kbd "C-<up>"   ) 'windmove-up)
 (define-key global-map (kbd "C-<down>" ) 'windmove-down)
@@ -56,10 +58,10 @@
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
 (add-hook 'w3m-mode-hook
-	  '(lambda ()
-	     (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
-	     (define-key w3m-mode-map "c" 'w3m-submit-form)
-	     (define-key w3m-mode-map "C" 'w3m-print-current-url)))
+          '(lambda ()
+             (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
+             (define-key w3m-mode-map "c" 'w3m-submit-form)
+             (define-key w3m-mode-map "C" 'w3m-print-current-url)))
 
 (add-hook 'dired-mode-hook
           '(lambda ()
