@@ -4,6 +4,7 @@
 (show-paren-mode 1)
 
 (dolist (hook (list
+               'php-mode-hook
                'emacs-lisp-mode-hook
                'lisp-mode-hook
                'lisp-interaction-mode-hook
@@ -13,7 +14,6 @@
                'java-mode-hook
                'haskell-mode-hook
                'asm-mode-hook
-               'emms-tag-editor-mode-hook
                'sh-mode-hook
                ))
   (add-hook hook 'company-mode))
