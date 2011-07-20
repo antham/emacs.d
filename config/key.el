@@ -53,6 +53,8 @@
 (define-key global-map (kbd "C-<right>") 'windmove-right)
 (define-key global-map (kbd "C-<left>" ) 'windmove-left)
 
+(global-set-key (kbd "M-C-y") 'kill-ring-search)
+
 (define-key global-map (kbd "M-z" ) 'zap-up-to-char)
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)

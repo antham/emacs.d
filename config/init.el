@@ -35,6 +35,7 @@
 (require 'globalff)
 (require 'grep-buffers)
 ;; (require 'jabber)
+(require 'kill-ring-search)
 (require 'magit)
 (require 'mime-w3m)
 (require 'mk-project-anything)
