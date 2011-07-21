@@ -5,12 +5,6 @@
   ;; If there is more than one, they won't work right.
  '(anything-c-adaptive-history-length 100)
  '(anything-command-map-prefix-key "M-<down>")
- '(company-auto-complete nil)
- '(company-auto-complete-chars (quote (32 40 41 46 34 36 39 60 124 33)))
- '(company-backends (quote ((company-gtags company-dabbrev-code company-keywords company-abbrev company-tempo))))
- '(company-idle-delay t)
- '(company-require-match nil)
- '(company-show-numbers t)
  '(cscope-do-not-update-database t)
  '(flymake-gui-warnings-enabled nil)
  '(flymake-log-level 2)

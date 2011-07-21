@@ -3,20 +3,24 @@
 
 (show-paren-mode 1)
 
-(dolist (hook (list
-               'php-mode-hook
-               'emacs-lisp-mode-hook
-               'lisp-mode-hook
-               'lisp-interaction-mode-hook
-               'scheme-mode-hook
-               'c-mode-hook
-               'c++-mode-hook
-               'java-mode-hook
-               'haskell-mode-hook
-               'asm-mode-hook
-               'sh-mode-hook
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/library/auto-complete/auto-complete/ac-dict")
+
+(global-auto-complete-mode t)
+(setq ac-auto-start 4)
+
+(setq-default ac-sources
+              '(ac-source-functions
+               ac-source-variables
+               ac-source-symbols
+               ac-source-dabbrev
+               ac-source-files-in-current-dir
+               ac-source-filename
+               ac-source-words-in-buffer
+               ac-source-words-in-all-buffer
+               ac-source-dictionary
+               ac-source-etags
+               ac-source-yasnippet
                ))
-  (add-hook hook 'company-mode))
 
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/library/yasnippet/snippets")
