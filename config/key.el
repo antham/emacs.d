@@ -75,4 +75,4 @@
 (define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
 (define-key ac-complete-mode-map (kbd "C-p") 'ac-previous)
 (define-key ac-complete-mode-map (kbd "C-g") 'ac-stop)
-(define-key ac-complete-mode-map "\r" 'ac-complete)
+(define-key ac-complete-mode-map (kbd "<return>") 'ac-complete)

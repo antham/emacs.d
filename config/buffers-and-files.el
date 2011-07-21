@@ -25,17 +25,17 @@
       '(("Groups"
          ("Code" (or (mode . js2-mode)
                      (mode . js-mode)
-		     (mode . html-mode)
-		     (mode . css-mode)
-		     (mode . c++-mode)
+                     (mode . html-mode)
+                     (mode . css-mode)
+                     (mode . c++-mode)
                      (mode . c-mode)
                      (mode . emacs-lisp-mode)
-		     (mode . lisp-mode)
-		     (mode . perl-mode)
-		     (mode . php-mode)
-		     (mode . python-mode)
-		     (mode . yaml-mode)))
-	 
+                     (mode . lisp-mode)
+                     (mode . perl-mode)
+                     (mode . php-mode)
+                     (mode . python-mode)
+                     (mode . yaml-mode)))
+
          ("W3m" (mode . w3m-mode))
          ("Terminal" (mode . term-mode))
          ("Search" (or (mode . ack-mode)
@@ -44,13 +44,13 @@
          ("Emacs" (or
                    (name . "^\\*scratch\\*$")
                    (name . "^\\*Messages\\*$")))
-	 )
-	))
+         )
+        ))
 
 (add-hook 'ibuffer-mode-hook
-	  '(lambda ()
-	     (ibuffer-auto-mode 1)
-	     (ibuffer-switch-to-saved-filter-groups "Groups")))
+          '(lambda ()
+             (ibuffer-auto-mode 1)
+             (ibuffer-switch-to-saved-filter-groups "Groups")))
 
 (setq ibuffer-expert t)
 
