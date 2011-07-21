@@ -6,10 +6,8 @@
   (interactive)
   (anything-other-buffer
    '(anything-c-source-buffers+
-     anything-c-source-recentf
      anything-c-source-occur
-     anything-c-source-mark-ring
-     anything-c-source-global-mark-ring
+     anything-c-source-recentf
      anything-c-source-locate
      )
    " *base-anything*"))
