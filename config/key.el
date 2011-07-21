@@ -70,3 +70,9 @@
              (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
 
 (global-set-key (kbd "C-c C-j") 'term-line-mode)
+
+(define-key ac-complete-mode-map (kbd "M-x") 'execute-extended-command)
+(define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
+(define-key ac-complete-mode-map (kbd "C-p") 'ac-previous)
+(define-key ac-complete-mode-map (kbd "C-g") 'ac-stop)
+(define-key ac-complete-mode-map "\r" 'ac-complete)

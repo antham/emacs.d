@@ -12,13 +12,14 @@
               '(ac-source-functions
                ac-source-variables
                ac-source-symbols
-               ac-source-dabbrev
+               ac-source-dabbrev-words
                ac-source-files-in-current-dir
                ac-source-filename
                ac-source-words-in-buffer
                ac-source-words-in-all-buffer
                ac-source-dictionary
                ac-source-etags
+               ac-source-gtags
                ac-source-yasnippet
                ))
 

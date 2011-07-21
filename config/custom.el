@@ -3,6 +3,9 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(ac-candidate-limit nil)
+ '(ac-stop-words (quote ("$this")))
+ '(ac-use-overriding-local-map nil)
  '(anything-c-adaptive-history-length 100)
  '(anything-command-map-prefix-key "M-<down>")
  '(cscope-do-not-update-database t)
@@ -46,8 +49,11 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))))
- '(ac-dabbrev-menu-face ((t (:background "lightgray" :foreground "purple"))))
- '(ac-dabbrev-selection-face ((t (:background "purple" :foreground "white"))))
+ '(ac-etags-candidate-face ((t (:background "gainsboro" :foreground "green4"))))
+ '(ac-etags-selection-face ((t (:background "green4" :foreground "white"))))
+ '(ac-gtags-candidate-face ((t (:background "blue3" :foreground "yellow2"))))
+ '(ac-gtags-selection-face ((t (:background "yellow3" :foreground "blue3"))))
+ '(cursor ((t (:background "yellow"))))
  '(diredp-compressed-file-suffix ((t (:background "Purple" :foreground "Yellow" :weight bold))))
  '(diredp-date-time ((t (:background "White" :foreground "DarkGoldenrod4"))))
  '(diredp-deletion-file-name ((t (:background "White" :foreground "Red"))))
