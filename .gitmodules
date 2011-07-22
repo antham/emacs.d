@@ -15,7 +15,7 @@
         url = git://github.com/dimitri/switch-window.git
 [submodule "library/backup-system"]
         path = library/backup-system
-        url = git://github.com:sansplomb95/backup-system.git
+        url = git://github.com/sansplomb95/backup-system.git
 [submodule "library/undo-tree"]
         path = library/undo-tree
         url = http://www.dr-qubit.org/git/undo-tree.git
