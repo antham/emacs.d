@@ -73,5 +73,6 @@
  '(magit-diff-hunk-header ((t (:inherit magit-header :foreground "RoyalBlue4" :slant italic))))
  '(magit-diff-none ((t (:foreground "white"))))
  '(magit-header ((t (:foreground "yellow"))))
+ '(magit-item-highlight ((((class color) (background dark)) (:background "gray23"))))
  '(magit-log-message ((t (:foreground "white" :weight bold))))
  '(magit-section-title ((t (:inherit nil :foreground "orange" :weight bold)))))
