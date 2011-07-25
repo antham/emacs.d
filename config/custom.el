@@ -11,7 +11,7 @@
  '(anything-command-map-prefix-key "M-<down>")
  '(cscope-do-not-update-database t)
  '(flymake-gui-warnings-enabled nil)
- '(flymake-log-level 2)
+ '(flymake-log-level -1)
  '(flymake-no-changes-timeout 0.5)
  '(globalff-regexp-search t)
  '(grep-command "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude-dir=\"*git*\" -nsH2re ")
