@@ -55,3 +55,14 @@
 (setq ibuffer-expert t)
 
 (global-undo-tree-mode)
+
+(add-hook 'comint-output-filter-functions
+          'comint-strip-ctrl-m)
+
+(defadvice display-message-or-buffer (before ansi-color activate)
+  "Process ANSI color codes in shell output."
+  (let ((buf (ad-get-arg 0)))
+    (and (bufferp buf)
+         (string= (buffer-name buf) "*Shell Command Output*")
+         (with-current-buffer buf
+           (ansi-color-apply-on-region (point-min) (point-max))))))

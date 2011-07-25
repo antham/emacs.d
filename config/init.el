@@ -17,6 +17,7 @@
 
 (require 'ac-dabbrev)
 (require 'ack)
+(require 'ansi-color)
 (require 'anything)
 (require 'anything-config)
 (require 'anything-ack)
