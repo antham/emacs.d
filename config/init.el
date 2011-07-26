@@ -44,6 +44,7 @@
 (require 'magit)
 (require 'mime-w3m)
 (require 'mk-project-anything)
+(require 'shell-pop)
 (require 'show-wspace)
 (require 'switch-window)
 (require 'traverselisp)

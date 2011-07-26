@@ -43,6 +43,8 @@
 
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
+(global-set-key (kbd "C-)") 'shell-pop)
+
 (global-set-key (kbd "C-%") 'split-window-horizontally)
 (global-set-key (kbd "C-:") 'split-window-vertically)
 (global-set-key (kbd "C-!") 'delete-window)
