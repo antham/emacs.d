@@ -10,6 +10,7 @@
  '(anything-c-adaptive-history-length 100)
  '(anything-command-map-prefix-key "M-<down>")
  '(cscope-do-not-update-database t)
+ '(eshell-buffer-maximum-lines 10000)
  '(flymake-gui-warnings-enabled nil)
  '(flymake-log-level -1)
  '(flymake-no-changes-timeout 0.5)

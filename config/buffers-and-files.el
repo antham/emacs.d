@@ -71,3 +71,13 @@
 (shell-pop-set-internal-mode-shell "/bin/zsh")
 (shell-pop-set-window-height 30)
 (shell-pop-set-window-position "bottom")
+
+(setq eshell-output-filter-functions
+      (list
+       'eshell-handle-ansi-color
+       'eshell-handle-control-codes
+       'eshell-watch-for-password-prompt))
+(add-hook 'eshell-mode-hook 'ansi-color-for-comint-mode-on)
+(setq eshell-history-size 1000)
+
+(add-to-list 'ac-modes 'eshell-mode)
