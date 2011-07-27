@@ -6,8 +6,9 @@
 
 (global-set-key (kbd "C-c a a") 'anything-ack)
 (global-set-key (kbd "C-c a c") 'ack)
-(global-set-key (kbd "C-c b") 'switch-to-buffer)
-(global-set-key (kbd "C-c e") 'yas/expand)
+(global-set-key (kbd "C-c b")   'switch-to-buffer)
+(global-set-key (kbd "C-c c")   'magit-status)
+(global-set-key (kbd "C-c e")   'yas/expand)
 (global-set-key (kbd "C-c f d") 'find-dired)
 (global-set-key (kbd "C-c f g") 'find-grep-dired)
 (global-set-key (kbd "C-c f n") 'find-name-dired)
@@ -19,8 +20,7 @@
 (global-set-key (kbd "C-c m d") 'anything-c-moccur-dmoccur)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
-(global-set-key (kbd "C-c s")   'magit-status)
-(global-set-key (kbd "C-c t") 'term)
+(global-set-key (kbd "C-c t")   'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w l") 'wl)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
@@ -63,6 +63,14 @@
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
+(global-set-key (kbd "C-c C-j") 'term-line-mode)
+
+(define-key ac-complete-mode-map (kbd "M-x") 'execute-extended-command)
+(define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
+(define-key ac-complete-mode-map (kbd "C-p") 'ac-previous)
+(define-key ac-complete-mode-map (kbd "C-g") 'ac-stop)
+(define-key ac-complete-mode-map (kbd "<return>") 'ac-complete)
+
 (add-hook 'w3m-mode-hook
           '(lambda ()
              (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
@@ -73,10 +81,14 @@
           '(lambda ()
              (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
 
-(global-set-key (kbd "C-c C-j") 'term-line-mode)
+(add-hook 'eshell-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-<up>") 'windmove-up)
+             (local-set-key (kbd "C-<down>") 'windmove-down)
+             ))
 
-(define-key ac-complete-mode-map (kbd "M-x") 'execute-extended-command)
-(define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
-(define-key ac-complete-mode-map (kbd "C-p") 'ac-previous)
-(define-key ac-complete-mode-map (kbd "C-g") 'ac-stop)
-(define-key ac-complete-mode-map (kbd "<return>") 'ac-complete)
+(add-hook 'comint-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-<up>") 'windmove-up)
+             (local-set-key (kbd "C-<down>") 'windmove-down)
+             ))
