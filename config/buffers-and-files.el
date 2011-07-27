@@ -63,7 +63,9 @@
   "Process ANSI color codes in shell output."
   (let ((buf (ad-get-arg 0)))
     (and (bufferp buf)
-         (string= (buffer-name buf) "*Shell Command Output*")
+         (or (string= (buffer-name buf) "*Shell Command Output*")
+             (string= (buffer-name buf) "*Async Shell Command*")
+             )
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
