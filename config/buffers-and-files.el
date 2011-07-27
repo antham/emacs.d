@@ -63,9 +63,7 @@
   "Process ANSI color codes in shell output."
   (let ((buf (ad-get-arg 0)))
     (and (bufferp buf)
-         (or (string= (buffer-name buf) "*Shell Command Output*")
-             (string= (buffer-name buf) "*Async Shell Command*")
-             )
+         (string= (buffer-name buf) "*Shell Command Output*")
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
@@ -80,6 +78,7 @@
        'eshell-handle-control-codes
        'eshell-watch-for-password-prompt))
 (add-hook 'eshell-mode-hook 'ansi-color-for-comint-mode-on)
+(add-hook 'comint-mode-hook 'ansi-color-for-comint-mode-on)
 (setq eshell-history-size 1000)
 
 (add-to-list 'ac-modes 'eshell-mode)
