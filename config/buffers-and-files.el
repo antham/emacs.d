@@ -67,7 +67,7 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
-(shell-pop-set-internal-mode "eshell")
+(shell-pop-set-internal-mode "shell")
 (shell-pop-set-internal-mode-shell "/bin/zsh")
 (shell-pop-set-window-height 30)
 (shell-pop-set-window-position "bottom")
@@ -81,4 +81,5 @@
 (add-hook 'comint-mode-hook 'ansi-color-for-comint-mode-on)
 (setq eshell-history-size 1000)
 
-(add-to-list 'ac-modes 'eshell-mode)
+(add-hook 'shell-mode-hook
+          'ansi-color-for-comint-mode-on)

@@ -8,6 +8,8 @@
 (global-auto-complete-mode t)
 (setq ac-auto-start 4)
 
+(add-to-list 'ac-modes 'shell-mode)
+
 (setq-default ac-sources
               '(ac-source-functions
                ac-source-variables
