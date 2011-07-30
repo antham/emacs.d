@@ -5,4 +5,4 @@
 (set-cursor-color "yellow")
 
 (color-theme-initialize)
-(color-theme-billw)
+(color-theme-dark-laptop)
