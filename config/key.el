@@ -52,6 +52,8 @@
 (global-set-key (kbd "C-^") 'enlarge-window)
 (global-set-key (kbd "C-=") 'enlarge-window-horizontally)
 
+(global-set-key (kbd "C-(") ctl-x-r-map)
+
 (define-key global-map (kbd "C-<up>"   ) 'windmove-up)
 (define-key global-map (kbd "C-<down>" ) 'windmove-down)
 (define-key global-map (kbd "C-<right>") 'windmove-right)
