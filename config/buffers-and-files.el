@@ -67,7 +67,7 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
-(shell-pop-set-internal-mode "shell")
+(shell-pop-set-internal-mode "terminal")
 (shell-pop-set-internal-mode-shell "/bin/zsh")
 (shell-pop-set-window-height 30)
 (shell-pop-set-window-position "bottom")

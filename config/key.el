@@ -65,7 +65,7 @@
 
 (global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
-(global-set-key (kbd "C-c C-j") 'term-line-mode)
+(define-key global-map (kbd "s-SPC") 'term-toggle-mode)
 
 (define-key ac-complete-mode-map (kbd "M-x") 'execute-extended-command)
 (define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
