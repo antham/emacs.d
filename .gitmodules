@@ -8,8 +8,8 @@
         path = library/mk-project
         url = git://github.com/rakete/mk-project.git
 [submodule "library/magit"]
-        path = library/magit
-        url = git://github.com/philjackson/magit.git
+	path = library/magit
+	url = git://github.com/magit/magit.git
 [submodule "library/switch-window"]
         path = library/switch-window
         url = git://github.com/dimitri/switch-window.git
