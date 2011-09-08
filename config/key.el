@@ -26,6 +26,7 @@
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w l") 'wl)
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
+(global-set-key (kbd "C-c u") 'browse-url-generic)
 
 (global-set-key (kbd "C-c ,") 'globalff)
 
