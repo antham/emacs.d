@@ -21,6 +21,8 @@
  '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -print0 | xargs -0 -e grep <C> -n -e <R>")
  '(grep-highlight-matches (quote always))
  '(grep-scroll-output nil)
+ '(gtags-path-style (quote absolute))
+ '(gtags-suggested-key-mapping nil)
  '(history-delete-duplicates nil)
  '(history-length 100)
  '(icomplete-mode t)

@@ -40,6 +40,7 @@
 (require 'git)
 (require 'globalff)
 (require 'grep-buffers)
+(require 'gtags)
 ;; (require 'jabber)
 (require 'kill-ring-search)
 (require 'magit)

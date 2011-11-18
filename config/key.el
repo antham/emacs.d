@@ -1,6 +1,7 @@
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
+(global-set-key (kbd "M-.") 'gtags-find-tag)
 (global-set-key (kbd "C-;") 'base-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
