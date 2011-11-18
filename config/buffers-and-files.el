@@ -8,6 +8,7 @@
    '(anything-c-source-buffers-list
      anything-c-source-occur
      anything-c-source-recentf
+     anything-c-source-gtags-select
      anything-c-source-locate
      )
    " *base-anything*"))
