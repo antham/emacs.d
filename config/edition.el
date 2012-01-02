@@ -20,7 +20,6 @@
                ac-source-words-in-buffer
                ac-source-words-in-all-buffer
                ac-source-dictionary
-               ac-source-etags
                ac-source-gtags
                ac-source-yasnippet
                ))
