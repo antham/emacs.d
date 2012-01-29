@@ -98,3 +98,17 @@
              (local-set-key (kbd "C-<up>") 'windmove-up)
              (local-set-key (kbd "C-<down>") 'windmove-down)
              ))
+
+;;Terminal mapping
+
+(global-set-key (kbd "M-[ ;") 'base-anything)
+(global-set-key (kbd "M-[ $") 'dabbrev-expand)
+
+(global-set-key (kbd "M-[ %") 'split-window-horizontally)
+(global-set-key (kbd "M-[ :") 'split-window-vertically)
+(global-set-key (kbd "M-[ !") 'delete-window)
+(global-set-key (kbd "M-[ *") 'delete-other-windows)
+(global-set-key (kbd "M-[ ^") 'enlarge-window)
+(global-set-key (kbd "M-[ =") 'enlarge-window-horizontally)
+
+(global-set-key (kbd "M-[ (") ctl-x-r-map)
