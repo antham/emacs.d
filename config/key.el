@@ -100,6 +100,19 @@
              ))
 
 ;;Terminal mapping
+(global-set-key (kbd "M-[ , c") 'project-compile)
+(global-set-key (kbd "M-[ , l") 'project-load)
+(global-set-key (kbd "M-[ , a") 'project-ack)
+(global-set-key (kbd "M-[ , b") 'project-find-anything)
+(global-set-key (kbd "M-[ , g") 'project-grep)
+(global-set-key (kbd "M-[ , o") 'project-multi-occur)
+(global-set-key (kbd "M-[ , u") 'project-unload)
+(global-set-key (kbd "M-[ , f") 'project-find-file-ido)
+(global-set-key (kbd "M-[ , i") 'project-index)
+(global-set-key (kbd "M-[ , s") 'project-status)
+(global-set-key (kbd "M-[ , h") 'project-home)
+(global-set-key (kbd "M-[ , d") 'project-dired)
+(global-set-key (kbd "M-[ , t") 'project-tags)
 
 (global-set-key (kbd "M-[ ;") 'base-anything)
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
