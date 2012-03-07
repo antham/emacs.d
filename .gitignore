@@ -5,3 +5,4 @@ tramp
 config/perso.el
 history
 auto-save-list/*
+macros/*
