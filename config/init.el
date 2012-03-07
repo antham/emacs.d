@@ -73,6 +73,9 @@
 (load-file "~/.emacs.d/config/edition.el")
 (load-file "~/.emacs.d/config/key.el")
 (load-file "~/.emacs.d/config/misc.el")
-(load-file "~/.emacs.d/config/perso.el")
+
+(if (file-exists-p "~/.emacs.d/config/perso.el")
+    (load-file "~/.emacs.d/config/perso.el")
+  )
 
 (load-file "~/.emacs.d/projects/init.el")
