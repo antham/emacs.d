@@ -39,6 +39,7 @@
  '(js2-mirror-mode nil)
  '(locate-command "locate --regex")
  '(make-backup-files nil)
+ '(mk-proj-ack-cmd "ack")
  '(partial-completion-mode nil)
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
