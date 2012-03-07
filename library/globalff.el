@@ -637,10 +637,10 @@ It expects that `globalff-buffer' is selected already."
 ;; gnuserv-frame (selected-frame)) to prevent gnuserv's own frame from
 ;; appearing
 
-(setq globalff-popup-frame (make-frame '((name . "Select file")
-                                         (height . 30)
-                                         (top . 200)
-                                         (visibility . nil))))
+;; (setq globalff-popup-frame (make-frame '((name . "Select file")
+;;                                          (height . 30)
+;;                                          (top . 200)
+;;                                          (visibility . nil))))
 
 
 ;;
