@@ -15,7 +15,5 @@
 ;;             (shutdown-hook    nil)
 ;;             ))
 ;;
-;; And add it to your project config by appending following line below to this file
+;; And add it to your project config by appending following line below to projects/init.el file, if it doesn't exist yet, create it by coping this file
 ;; (load-file "~/.emacs.d/projects/example.el")
-
-
