@@ -1,5 +1,3 @@
-(server-start)
-
 ;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything"))
