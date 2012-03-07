@@ -2,3 +2,6 @@
 projects/*.el
 ac-comphist.dat
 tramp
+config/perso.el
+history
+auto-save-list/*
