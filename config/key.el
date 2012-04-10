@@ -23,6 +23,7 @@
 (global-set-key (kbd "C-c m d") 'anything-c-moccur-dmoccur)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
+(global-set-key (kbd "C-c s")   'w3m-search-new-session)
 (global-set-key (kbd "C-c t")   'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w l") 'wl)
@@ -79,9 +80,15 @@
 
 (add-hook 'w3m-mode-hook
           '(lambda ()
-             (define-key w3m-mode-map "f" 'w3m-go-to-linknum)
              (define-key w3m-mode-map "c" 'w3m-submit-form)
-             (define-key w3m-mode-map "C" 'w3m-print-current-url)))
+             (define-key w3m-mode-map "f" 'w3m-lnum-follow)
+             (define-key w3m-mode-map "n" 'w3m-next-buffer)
+             (define-key w3m-mode-map "o" 'w3m-view-this-url-new-session)
+             (define-key w3m-mode-map "O" 'w3m-view-this-url-new-session-in-background)
+             (define-key w3m-mode-map "p" 'w3m-previous-buffer)
+             (define-key w3m-mode-map "q" 'w3m-delete-buffer)
+             (define-key w3m-mode-map "C" 'w3m-print-current-url)
+             ))
 
 (add-hook 'dired-mode-hook
           '(lambda ()

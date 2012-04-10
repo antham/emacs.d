@@ -50,8 +50,13 @@
  '(uniquify-min-dir-content 0)
  '(use-file-dialog nil)
  '(viper-insert-state-cursor-color "Yellow")
+ '(w3m-default-display-inline-images t)
  '(w3m-home-page "http://google.fr")
- '(w3m-user-agent "Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1"))
+ '(w3m-lnum-quick-browsing (quote quick-all))
+ '(w3m-new-session-url "http://google.fr")
+ '(w3m-use-cookies t)
+ '(w3m-use-title-buffer-name t)
+ '(w3m-user-agent "Mozilla/5.0 (compatible; Windows; U; Windows NT 6.2; WOW64; en-US; rv:12.0) Gecko/20120403211507 Firefox/12.0"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
