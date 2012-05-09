@@ -121,6 +121,7 @@
 (global-set-key (kbd "M-[ , d") 'project-dired)
 (global-set-key (kbd "M-[ , t") 'project-tags)
 
+(global-set-key (kbd "M-[ &") 'quoted-insert)
 (global-set-key (kbd "M-[ ;") 'base-anything)
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
 
