@@ -47,6 +47,7 @@
 (require 'shell-pop)
 (require 'show-wspace)
 (require 'switch-window)
+(require 'ssh)
 (require 'traverselisp)
 (require 'undo-tree)
 (require 'w3m-load)
