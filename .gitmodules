@@ -1,6 +1,6 @@
 [submodule "library/auto-complete/auto-complete"]
-        path = library/auto-complete/auto-complete
-        url = git://github.com/m2ym/auto-complete.git
+	path = library/auto-complete/auto-complete
+	url = git://github.com/auto-complete/auto-complete.git
 [submodule "library/anything/anything-config"]
         path = library/anything/anything-config
         url = git://repo.or.cz/anything-config.git
