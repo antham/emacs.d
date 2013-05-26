@@ -7,7 +7,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/color-theme"))
 ;; (add-to-list 'load-path "~/.emacs.d/library/jabber")
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
@@ -38,7 +37,6 @@
 (require 'gtags)
 ;; (require 'jabber)
 (require 'kill-ring-search)
-(require 'magit)
 (require 'mime-w3m)
 (require 'mk-project-anything)
 (require 'shell-pop)

@@ -7,9 +7,6 @@
 [submodule "library/mk-project"]
         path = library/mk-project
         url = git://github.com/rakete/mk-project.git
-[submodule "library/magit"]
-        path = library/magit
-        url = git://github.com/magit/magit.git
 [submodule "library/backup-system"]
         path = library/backup-system
         url = git://github.com/sansplomb95/backup-system.git
