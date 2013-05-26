@@ -10,9 +10,6 @@
 [submodule "library/magit"]
         path = library/magit
         url = git://github.com/magit/magit.git
-[submodule "library/switch-window"]
-        path = library/switch-window
-        url = git://github.com/dimitri/switch-window.git
 [submodule "library/backup-system"]
         path = library/backup-system
         url = git://github.com/sansplomb95/backup-system.git

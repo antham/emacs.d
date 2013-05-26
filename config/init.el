@@ -9,7 +9,6 @@
 ;; (add-to-list 'load-path "~/.emacs.d/library/jabber")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/switch-window"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
 (require 'ac-dabbrev)
@@ -44,7 +43,6 @@
 (require 'mk-project-anything)
 (require 'shell-pop)
 (require 'show-wspace)
-(require 'switch-window)
 (require 'ssh)
 (require 'traverselisp)
 (require 'w3m-load)
