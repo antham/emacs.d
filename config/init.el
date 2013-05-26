@@ -10,7 +10,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/magit"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/switch-window"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/undo-tree"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
 (require 'ac-dabbrev)
@@ -48,7 +47,6 @@
 (require 'switch-window)
 (require 'ssh)
 (require 'traverselisp)
-(require 'undo-tree)
 (require 'w3m-load)
 (require 'wgrep)
 (require 'xcscope)
