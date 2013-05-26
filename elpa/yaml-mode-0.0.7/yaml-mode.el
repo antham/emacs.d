@@ -6,6 +6,7 @@
 ;;         Marshall T. Vandegrift <llasram@gmail.com>
 ;; Keywords: data yaml
 ;; Version: 0.0.7
+;; URL: https://github.com/yoshiki/yaml-mode
 
 ;; This file is not part of Emacs
 
