@@ -24,7 +24,6 @@
 (require 'auto-complete-etags)
 (require 'autopair)
 (require 'backup-system)
-(require 'browse-kill-ring)
 (require 'browse-kill-ring+)
 (require 'color-theme)
 (require 'dired+)
