@@ -1,7 +1,5 @@
 ;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/anything/anything-config"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete/auto-complete"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
@@ -16,9 +14,7 @@
 (require 'anything-config)
 (require 'anything-ack)
 (require 'anything-gtags)
-(require 'anything-match-plugin)
 (require 'anything-traverse)
-(require 'anything-c-moccur)
 (require 'auto-complete)
 (require 'auto-complete-config)
 (require 'auto-complete-etags)

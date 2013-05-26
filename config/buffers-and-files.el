@@ -5,7 +5,7 @@
 (defun base-anything()
   (interactive)
   (anything-other-buffer
-   '(anything-c-source-buffers-list
+   '(anything-c-source-buffers
      anything-c-source-occur
      anything-c-source-recentf
      anything-c-source-gtags-select
