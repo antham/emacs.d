@@ -1,3 +1,5 @@
+(outline-minor-mode 1)
+
 (toggle-diredp-find-file-reuse-dir t)
 
 (setq password-cache-expiry nil)
