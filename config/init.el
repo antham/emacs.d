@@ -25,7 +25,6 @@
 (require 'flymake)
 (require 'globalff)
 (require 'grep-buffers)
-(require 'kill-ring-search)
 (require 'mime-w3m)
 (require 'mk-project-anything)
 (require 'shell-pop)
