@@ -3,8 +3,6 @@
 
 (show-paren-mode 1)
 
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/library/auto-complete/auto-complete/ac-dict")
-
 (global-auto-complete-mode t)
 (setq ac-auto-start 4)
 
@@ -14,7 +12,6 @@
               '(ac-source-functions
                ac-source-variables
                ac-source-symbols
-               ac-source-dabbrev-words
                ac-source-files-in-current-dir
                ac-source-filename
                ac-source-words-in-buffer

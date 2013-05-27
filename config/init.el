@@ -1,13 +1,10 @@
 ;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete/auto-complete"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/color-theme"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
-(require 'ac-dabbrev)
 (require 'anything)
 (require 'anything-config)
 (require 'anything-ack)
@@ -15,7 +12,6 @@
 (require 'anything-traverse)
 (require 'auto-complete)
 (require 'auto-complete-config)
-(require 'auto-complete-etags)
 (require 'autopair)
 (require 'backup-system)
 (require 'color-theme)

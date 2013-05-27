@@ -1,6 +1,3 @@
-[submodule "library/auto-complete/auto-complete"]
-        path = library/auto-complete/auto-complete
-        url = git://github.com/auto-complete/auto-complete.git
 [submodule "library/mk-project"]
         path = library/mk-project
         url = git://github.com/rakete/mk-project.git
