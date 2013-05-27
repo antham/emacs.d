@@ -26,7 +26,6 @@
 (require 'django-html-mode)
 (require 'etags-select)
 (require 'flymake)
-(require 'git)
 (require 'globalff)
 (require 'grep-buffers)
 ;; (require 'jabber)
