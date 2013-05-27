@@ -20,7 +20,6 @@
 (require 'globalff)
 (require 'grep-buffers)
 (require 'mime-w3m)
-(require 'mk-project-anything)
 (require 'shell-pop)
 (require 'show-wspace)
 (require 'traverselisp)
@@ -49,5 +48,3 @@
 (if (file-exists-p "~/.emacs.d/config/perso.el")
     (load-file "~/.emacs.d/config/perso.el")
   )
-
-(load-file "~/.emacs.d/projects/init.el")

@@ -1,6 +1,3 @@
-[submodule "library/mk-project"]
-        path = library/mk-project
-        url = git://github.com/rakete/mk-project.git
 [submodule "library/backup-system"]
         path = library/backup-system
         url = git://github.com/sansplomb95/backup-system.git
