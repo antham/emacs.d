@@ -9,7 +9,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
 (require 'ac-dabbrev)
-(require 'ansi-color)
 (require 'anything)
 (require 'anything-config)
 (require 'anything-ack)
