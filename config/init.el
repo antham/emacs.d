@@ -4,7 +4,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/auto-complete/auto-complete"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/color-theme"))
-;; (add-to-list 'load-path "~/.emacs.d/library/jabber")
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
@@ -26,7 +25,6 @@
 (require 'flymake)
 (require 'globalff)
 (require 'grep-buffers)
-;; (require 'jabber)
 (require 'kill-ring-search)
 (require 'mime-w3m)
 (require 'mk-project-anything)
