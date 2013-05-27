@@ -34,7 +34,6 @@
 (require 'mk-project-anything)
 (require 'shell-pop)
 (require 'show-wspace)
-(require 'ssh)
 (require 'traverselisp)
 (require 'w3m-load)
 (require 'wgrep)
