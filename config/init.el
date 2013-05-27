@@ -23,7 +23,6 @@
 (require 'color-theme)
 (require 'dired+)
 (require 'django-html-mode)
-(require 'etags-select)
 (require 'flymake)
 (require 'globalff)
 (require 'grep-buffers)
