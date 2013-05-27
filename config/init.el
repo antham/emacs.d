@@ -35,7 +35,6 @@
 (require 'xclip)
 (require 'yaml-mode)
 (require 'yasnippet)
-(require 'zencoding-mode)
 
 ;; Functions
 (load-file "~/.emacs.d/functions/indent.el")
