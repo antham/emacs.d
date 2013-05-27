@@ -1,4 +1,4 @@
-(toggle-dired-find-file-reuse-dir t)
+(toggle-diredp-find-file-reuse-dir t)
 
 (setq password-cache-expiry nil)
 
