@@ -1,7 +1,6 @@
 ;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/color-theme"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/mk-project"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
