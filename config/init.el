@@ -19,6 +19,7 @@
 (require 'flymake)
 (require 'globalff)
 (require 'grep-buffers)
+(require 'http-twiddle)
 (require 'mime-w3m)
 (require 'shell-pop)
 (require 'show-wspace)
