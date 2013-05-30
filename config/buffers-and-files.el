@@ -1,3 +1,5 @@
+(recentf-mode 1)
+
 (outline-minor-mode 1)
 
 (toggle-diredp-find-file-reuse-dir t)
@@ -7,11 +9,13 @@
 (defun base-anything()
   (interactive)
   (anything-other-buffer
-   '(anything-c-source-buffers
-     anything-c-source-occur
+   '(
+     anything-c-source-buffers+
      anything-c-source-recentf
+     anything-c-source-file-name-history
      anything-c-source-gtags-select
      anything-c-source-locate
+     anything-c-source-emacs-commands
      )
    " *base-anything*"))
 
