@@ -2,7 +2,8 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (global-set-key (kbd "M-.") 'gtags-find-tag)
-(global-set-key (kbd "C-;") 'base-anything)
+(global-set-key (kbd "C-;") 'file-anything)
+(global-set-key (kbd "C-,") 'buffer-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "C-c a a") 'anything-ack)
@@ -94,7 +95,9 @@
 
 ;;Terminal mapping
 (global-set-key (kbd "M-[ &") 'quoted-insert)
-(global-set-key (kbd "M-[ ;") 'base-anything)
+(global-set-key (kbd "M-[ ;") 'file-anything)
+(global-set-key (kbd "M-[ ,") 'buffer-anything)
+
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
 
 (global-set-key (kbd "M-[ %") 'split-window-horizontally)

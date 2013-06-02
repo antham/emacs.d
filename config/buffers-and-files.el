@@ -6,7 +6,7 @@
 
 (setq password-cache-expiry nil)
 
-(defun base-anything()
+(defun file-anything()
   (interactive)
   (anything-other-buffer
    '(
@@ -17,7 +17,18 @@
      anything-c-source-locate
      anything-c-source-emacs-commands
      )
-   " *base-anything*"))
+   " *file-anything*"))
+
+(defun buffer-anything()
+  (interactive)
+  (anything-other-buffer
+   '(
+     anything-c-source-occur
+     anything-c-source-browse-code
+     anything-c-source-register
+
+     )
+   " *buffer-anything*"))
 
 (remove-hook 'kill-emacs-hook 'anything-c-adaptive-save-history)
 (setq anything-quick-update t)
