@@ -4,6 +4,7 @@
 (global-set-key (kbd "M-.") 'gtags-find-tag)
 (global-set-key (kbd "C-;") 'file-anything)
 (global-set-key (kbd "C-,") 'buffer-anything)
+(global-set-key (kbd "C-x C-f") 'file-anything)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "C-c a a") 'anything-ack)
