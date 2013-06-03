@@ -14,6 +14,7 @@
 (global-set-key (kbd "C-c e")   'yas/expand)
 (global-set-key (kbd "C-c f c") 'copy-full-path-to-kill-ring)
 (global-set-key (kbd "C-c f d") 'find-dired)
+(global-set-key (kbd "C-c f e") 'flyc/show-fly-error-at-point-now)
 (global-set-key (kbd "C-c f g") 'find-grep-dired)
 (global-set-key (kbd "C-c f n") 'find-name-dired)
 (global-set-key (kbd "C-c f s") 'show-file-name)
