@@ -1,3 +1,6 @@
+
+(ido-vertical-mode 1)
+
 (recentf-mode 1)
 
 (outline-minor-mode 1)

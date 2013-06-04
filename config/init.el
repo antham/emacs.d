@@ -20,6 +20,7 @@
 (require 'flymake)
 (require 'globalff)
 (require 'http-twiddle)
+(require 'ido-vertical-mode)
 (require 'mime-w3m)
 (require 'shell-pop)
 (require 'show-wspace)
