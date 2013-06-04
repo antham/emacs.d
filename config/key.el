@@ -26,6 +26,7 @@
 (global-set-key (kbd "C-c m b") 'grep-buffers)
 (global-set-key (kbd "C-c m m") 'moccur)
 (global-set-key (kbd "C-c m o") 'occur-by-moccur)
+(global-set-key (kbd "C-c n")   'async-shell-command)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
 (global-set-key (kbd "C-c s")   'w3m-search-new-session)
