@@ -13,6 +13,7 @@
 (require 'auto-complete-config)
 (require 'autopair)
 (require 'backup-system)
+(require 'color-moccur)
 (require 'color-theme)
 (require 'dired+)
 (require 'django-html-mode)
