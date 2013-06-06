@@ -18,7 +18,6 @@
 (require 'dired+)
 (require 'django-html-mode)
 (require 'flymake)
-(require 'globalff)
 (require 'http-twiddle)
 (require 'ido-vertical-mode)
 (require 'mime-w3m)

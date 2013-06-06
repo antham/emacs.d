@@ -36,7 +36,7 @@
 (global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 (global-set-key (kbd "C-c u") 'browse-url-generic)
 
-(global-set-key (kbd "C-c ,") 'globalff)
+(global-set-key (kbd "C-c ,") 'shell-command-on-region)
 
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
