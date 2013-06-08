@@ -45,7 +45,7 @@
 
 (setq ibuffer-saved-filter-groups
       '(("Groups"
-         ("Code" (or (mode . js2-mode)
+         ("Code" (or (mode . js-mode)
                      (mode . js-mode)
                      (mode . html-mode)
                      (mode . css-mode)
