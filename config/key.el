@@ -29,7 +29,6 @@
 (global-set-key (kbd "C-c n")   'async-shell-command)
 (global-set-key (kbd "C-c o p") 'google-previous)
 (global-set-key (kbd "C-c o n") 'google-next)
-(global-set-key (kbd "C-c s")   'w3m-search-new-session)
 (global-set-key (kbd "C-c t")   'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-c w l") 'wl)
