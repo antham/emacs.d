@@ -1,11 +1,14 @@
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ac-auto-show-menu 0.2)
  '(ac-auto-start 5)
  '(ac-candidate-limit nil)
  '(ac-stop-words (quote ("$this")))
+ '(ac-use-fuzzy t)
+ '(ac-use-menu-map t)
  '(ac-use-overriding-local-map nil)
  '(anything-c-adaptive-history-length 100)
  '(anything-c-boring-file-regexp "/\\(?:\\(?:\\.\\(?:git\\|hg\\|svn\\|\\backup\\)\\|CVS\\|_darcs\\)\\)\\(?:/\\|$\\)\\|^\\.#\\|\\(?:\\(?:\\.\\(?:class\\|la\\|o\\)\\|~\\)\\)$")
