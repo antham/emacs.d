@@ -3,6 +3,9 @@
 
 (show-paren-mode 1)
 
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/library/yasnippet/snippets")
+
 (global-auto-complete-mode t)
 (setq ac-auto-start 4)
 
@@ -20,9 +23,6 @@
                ac-source-gtags
                ac-source-yasnippet
                ))
-
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/library/yasnippet/snippets")
 
 (setq-default indicate-empty-lines t)
 (setq x-select-enable-clipboard t)
