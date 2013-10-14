@@ -13,6 +13,7 @@
 (setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode)) auto-mode-alist))
 
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
 (add-to-list 'auto-mode-alist '("\\.twig\\'" . django-html-mode))
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
@@ -25,6 +26,7 @@
 (add-hook 'css-mode-hook 'coding-hook)
 (add-hook 'lisp-mode-hook 'coding-hook)
 (add-hook 'html-mode-hook 'coding-hook)
+(add-hook 'js2-mode-hook 'coding-hook)
 (add-hook 'perl-mode-hook 'coding-hook)
 (add-hook 'php-mode-hook 'coding-hook)
 (add-hook 'python-mode-hook 'coding-hook)
