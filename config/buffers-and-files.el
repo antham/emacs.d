@@ -1,3 +1,5 @@
+(setq-default save-place t)
+
 (projectile-global-mode 1)
 
 (ido-vertical-mode 1)
