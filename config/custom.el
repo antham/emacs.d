@@ -50,6 +50,8 @@
  '(php-mode-force-pear t)
  '(remote-shell-program "zsh")
  '(savehist-mode t nil (savehist))
+ '(shell-pop-shell-type (quote ("terminal" "*shell*" (lambda nil (shell)))))
+ '(shell-pop-term-shell "/bin/zsh")
  '(term-input-autoexpand (quote history))
  '(terminal-redisplay-interval 1000)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
@@ -64,10 +66,10 @@
  '(w3m-use-title-buffer-name t)
  '(w3m-user-agent "Mozilla/5.0 (compatible; Windows; U; Windows NT 6.2; WOW64; en-US; rv:12.0) Gecko/20120403211507 Firefox/12.0"))
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))))
  '(ac-etags-candidate-face ((t (:background "gainsboro" :foreground "green4"))))
  '(ac-etags-selection-face ((t (:background "green4" :foreground "white"))))
