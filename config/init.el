@@ -1,7 +1,6 @@
 ;; Library paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/yasnippet"))
 
 (require 'anything)
 (require 'anything-config)
@@ -30,7 +29,6 @@
 (require 'wgrep)
 (require 'xclip)
 (require 'yaml-mode)
-(require 'yasnippet)
 
 ;; Functions
 (load-file "~/.emacs.d/functions/indent.el")
