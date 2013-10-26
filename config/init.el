@@ -38,12 +38,10 @@
 (load-file "~/.emacs.d/functions/term.el")
 
 ;; Configuration
-(load-file "~/.emacs.d/config/appearance.el")
 (load-file "~/.emacs.d/config/buffers-and-files.el")
 (load-file "~/.emacs.d/config/coding.el")
 (load-file "~/.emacs.d/config/edition.el")
 (load-file "~/.emacs.d/config/key.el")
-(load-file "~/.emacs.d/config/misc.el")
 
 (if (file-exists-p "~/.emacs.d/config/perso.el")
     (load-file "~/.emacs.d/config/perso.el")

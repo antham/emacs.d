@@ -1,16 +1,6 @@
-(setq-default save-place t)
-
-(projectile-global-mode 1)
-
-(ido-vertical-mode 1)
-
-(recentf-mode 1)
-
 (outline-minor-mode 1)
 
 (toggle-diredp-find-file-reuse-dir t)
-
-(setq password-cache-expiry nil)
 
 (defun file-anything()
   (interactive)
@@ -43,8 +33,6 @@
 (setq anything-input-idle-delay 0.4)
 (setq anything-samewindow t)
 
-(ido-mode t)
-
 (setq ibuffer-saved-filter-groups
       '(("Groups"
          ("Code" (or (mode . js-mode)
@@ -71,15 +59,6 @@
          )
         ))
 
-(add-hook 'ibuffer-mode-hook
-          '(lambda ()
-             (ibuffer-auto-mode 1)
-             (ibuffer-switch-to-saved-filter-groups "Groups")))
-
-(setq ibuffer-expert t)
-
-(global-undo-tree-mode)
-
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
 
@@ -90,15 +69,3 @@
          (string= (buffer-name buf) "*Shell Command Output*")
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
-
-(setq eshell-output-filter-functions
-      (list
-       'eshell-handle-ansi-color
-       'eshell-handle-control-codes
-       'eshell-watch-for-password-prompt))
-(add-hook 'eshell-mode-hook 'ansi-color-for-comint-mode-on)
-(add-hook 'comint-mode-hook 'ansi-color-for-comint-mode-on)
-(setq eshell-history-size 1000)
-
-(add-hook 'shell-mode-hook
-          'ansi-color-for-comint-mode-on)

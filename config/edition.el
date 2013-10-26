@@ -1,10 +1,3 @@
-(column-number-mode t)
-(global-linum-mode)
-
-(show-paren-mode 1)
-
-(global-auto-complete-mode t)
-(setq ac-auto-start 4)
 
 (add-to-list 'ac-modes 'shell-mode)
 
@@ -19,8 +12,5 @@
                ac-source-dictionary
                ac-source-gtags
                ))
-
-(setq-default indicate-empty-lines t)
-(setq x-select-enable-clipboard t)
 
 (add-hook 'before-save-hook 'remove-tabs)
