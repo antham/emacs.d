@@ -61,6 +61,7 @@
  '(partial-completion-mode nil)
  '(password-cache-expiry nil)
  '(php-mode-force-pear t)
+ '(php-mode-hook (quote (flymake-php-load)))
  '(projectile-global-mode t)
  '(recentf-mode t)
  '(remote-shell-program "zsh")

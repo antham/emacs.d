@@ -16,7 +16,6 @@
 (require 'color-theme)
 (require 'dired+)
 (require 'django-html-mode)
-(require 'flymake)
 (require 'http-twiddle)
 (require 'ido-vertical-mode)
 (require 'mime-w3m)
@@ -39,7 +38,6 @@
 
 ;; Configuration
 (load-file "~/.emacs.d/config/buffers-and-files.el")
-(load-file "~/.emacs.d/config/coding.el")
 (load-file "~/.emacs.d/config/edition.el")
 (load-file "~/.emacs.d/config/key.el")
 
