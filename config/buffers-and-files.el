@@ -1,5 +1,7 @@
 (outline-minor-mode 1)
 
+(turn-on-xclip)
+
 (toggle-diredp-find-file-reuse-dir t)
 
 (defun file-helm()
