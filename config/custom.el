@@ -55,6 +55,7 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(mk-proj-ack-cmd "ack")
+ '(package-enable-at-startup nil)
  '(partial-completion-mode nil)
  '(password-cache-expiry nil)
  '(php-mode-force-pear t)

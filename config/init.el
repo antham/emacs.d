@@ -1,33 +1,9 @@
-;; Library paths
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
+;; Load custom file
+(setq custom-file "~/.emacs.d/config/custom.el")
+(load custom-file)
 
-(require 'anything)
-(require 'anything-config)
-(require 'anything-ack)
-(require 'anything-gtags)
-(require 'anything-traverse)
-(require 'ascope)
-(require 'auto-complete)
-(require 'auto-complete-config)
-(require 'autopair)
-(require 'backup-system)
-(require 'color-moccur)
-(require 'color-theme)
-(require 'dired+)
-(require 'django-html-mode)
-(require 'http-twiddle)
-(require 'ido-vertical-mode)
-(require 'mime-w3m)
-(require 'saveplace)
-(require 'shell-pop)
-(require 'show-wspace)
-(require 'traverselisp)
-(require 'uniquify)
-(require 'w3m-load)
-(require 'wgrep)
-(require 'xclip)
-(require 'yaml-mode)
+;; Library paths
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/library/backup-system"))
 
 ;; Functions
 (load-file "~/.emacs.d/functions/indent.el")
