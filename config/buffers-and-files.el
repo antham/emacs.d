@@ -2,36 +2,32 @@
 
 (toggle-diredp-find-file-reuse-dir t)
 
-(defun file-anything()
+(defun file-helm()
   (interactive)
-  (anything-other-buffer
+  (require 'helm-files)
+  (require 'helm-gtags)
+  (helm-other-buffer
    '(
-     anything-c-source-buffers+
-     anything-c-source-recentf
-     anything-c-source-file-name-history
-     anything-c-source-gtags-select
-     anything-c-source-locate
-     anything-c-source-emacs-commands
+     helm-source-buffers-list
+     helm-source-recentf
+     helm-source-file-name-history
+     helm-source-gtags-select
+     helm-source-locate
      )
-   " *file-anything*"))
+   " *file-helm*"))
 
-(defun buffer-anything()
+(defun buffer-helm()
   (interactive)
-  (anything-other-buffer
+  (require 'helm-ring)
+  (require 'helm-regexp)
+  (helm-other-buffer
    '(
-     anything-c-source-occur
-     anything-c-source-browse-code
-     anything-c-source-register
-
+     helm-source-moccur
+     helm-source-kill-ring
      )
-   " *buffer-anything*"))
+   " *buffer-helm*"))
 
-(remove-hook 'kill-emacs-hook 'anything-c-adaptive-save-history)
-(setq anything-quick-update t)
 
-(setq anything-idle-delay 0.9)
-(setq anything-input-idle-delay 0.4)
-(setq anything-samewindow t)
 
 (setq ibuffer-saved-filter-groups
       '(("Groups"
@@ -69,3 +65,4 @@
          (string= (buffer-name buf) "*Shell Command Output*")
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
+

@@ -2,12 +2,12 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (global-set-key (kbd "M-.") 'gtags-find-tag)
-(global-set-key (kbd "C-;") 'file-anything)
-(global-set-key (kbd "C-,") 'buffer-anything)
+(global-set-key (kbd "C-;") 'file-helm)
+(global-set-key (kbd "C-,") 'buffer-helm)
 (global-set-key (kbd "C-x C-f") 'find-file)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-(global-set-key (kbd "C-c a a") 'anything-ack)
+(global-set-key (kbd "C-c a a") 'helm-ack)
 (global-set-key (kbd "C-c a c") 'ack)
 (global-set-key (kbd "C-c b")   'switch-to-buffer)
 (global-set-key (kbd "C-c c")   'magit-status)
@@ -89,10 +89,6 @@
              (define-key w3m-mode-map "C" 'w3m-print-current-url)
              ))
 
-(add-hook 'dired-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "O") 'anything-c-moccur-dired-do-moccur-by-moccur)))
-
 (add-hook 'eshell-mode-hook
           '(lambda ()
              (local-set-key (kbd "C-<up>") 'windmove-up)
@@ -107,8 +103,8 @@
 
 ;;Terminal mapping
 (global-set-key (kbd "M-[ &") 'quoted-insert)
-(global-set-key (kbd "M-[ ;") 'file-anything)
-(global-set-key (kbd "M-[ ,") 'buffer-anything)
+(global-set-key (kbd "M-[ ;") 'file-helm)
+(global-set-key (kbd "M-[ ,") 'buffer-helm)
 
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
 
