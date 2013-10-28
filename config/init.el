@@ -13,8 +13,7 @@
 (load-file "~/.emacs.d/functions/term.el")
 
 ;; Configuration
-(load-file "~/.emacs.d/config/buffers-and-files.el")
-(load-file "~/.emacs.d/config/edition.el")
+(load-file "~/.emacs.d/config/def.el")
 (load-file "~/.emacs.d/config/key.el")
 
 (if (file-exists-p "~/.emacs.d/config/perso.el")

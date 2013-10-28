@@ -6,6 +6,7 @@
  '(ac-auto-show-menu 0.2)
  '(ac-auto-start 4)
  '(ac-candidate-limit nil)
+ '(ac-modes (quote (emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode c-mode cc-mode c++-mode go-mode java-mode malabar-mode clojure-mode clojurescript-mode scala-mode scheme-mode ocaml-mode tuareg-mode coq-mode haskell-mode agda-mode agda2-mode perl-mode cperl-mode python-mode ruby-mode lua-mode ecmascript-mode javascript-mode js-mode js2-mode php-mode css-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode ts-mode sclang-mode verilog-mode shell-mode)))
  '(ac-stop-words (quote ("$this")))
  '(ac-use-fuzzy t)
  '(ac-use-menu-map t)
@@ -44,9 +45,11 @@
  '(history-length 100)
  '(ibuffer-expert t)
  '(icomplete-mode t)
+ '(ido-vertical-mode t)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-buffer-choice "~/")
+ '(initial-scratch-message "")
  '(js-flat-functions nil)
  '(js2-basic-offset 4)
  '(js2-include-node-externs t)
@@ -54,7 +57,6 @@
  '(locate-command "locate --regex")
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(mk-proj-ack-cmd "ack")
  '(package-enable-at-startup nil)
  '(partial-completion-mode nil)
  '(password-cache-expiry nil)
@@ -90,7 +92,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))) t)
+ '(ac-completion-face ((t (:background "black" :foreground "red" :underline t))))
  '(ac-etags-candidate-face ((t (:background "gainsboro" :foreground "green4"))) t)
  '(ac-etags-selection-face ((t (:background "green4" :foreground "white"))) t)
  '(ac-gtags-candidate-face ((t (:background "blue3" :foreground "yellow2"))) t)
