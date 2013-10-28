@@ -1,1 +1,0 @@
-("/home/miramaze/.emacs.d/" "/home/miramaze/hture/" "/home/miramaze/proxy-clojure/" "/home/miramaze/nocurl/" "/home/miramaze/try/" "/home/miramaze/yacy-angular/" "/home/miramaze/screenrecorder/" "/home/miramaze/dot-files/")
