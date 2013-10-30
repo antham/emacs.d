@@ -38,7 +38,14 @@
   (global-auto-complete-mode t)
   )
 
+(defun init-ws()
+  (global-ws-trim-mode t)
+  (setq ws-trim-method-hook '(ws-trim-trailing ws-trim-tabs ws-trim-leading-tabs))
+  )
+
 (init-auto-complete)
+
+(init-ws)
 
 (outline-minor-mode 1)
 
