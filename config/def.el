@@ -25,16 +25,16 @@
 
 (defun init-auto-complete()
   (require 'auto-complete-config)
-  (setq ac-sources
-        '(
-          ac-source-functions
-          ac-source-variables
-          ac-source-symbols
-          ac-source-abbrev
-          ac-source-filename
-          ac-source-words-in-same-mode-buffers
-          ac-source-gtags
-          ))
+  (defun ac-common-setup ()
+    (add-to-list
+     'ac-source-functions
+     'ac-source-variables
+     'ac-source-symbols
+     'ac-source-abbrev
+     'ac-source-filename
+     'ac-source-words-in-same-mode-buffers
+     'ac-source-gtags
+     ))
   (global-auto-complete-mode t)
   )
 
