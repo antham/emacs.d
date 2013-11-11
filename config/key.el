@@ -9,7 +9,7 @@
 
 (global-set-key (kbd "C-c a a") 'helm-ack)
 (global-set-key (kbd "C-c a c") 'ack)
-(global-set-key (kbd "C-c b")   'switch-to-buffer)
+(global-set-key (kbd "C-c b")   'eval-buffer)
 (global-set-key (kbd "C-c c")   'magit-status)
 (global-set-key (kbd "C-c e")   'yas/expand)
 (global-set-key (kbd "C-c f c") 'copy-full-path-to-kill-ring)
