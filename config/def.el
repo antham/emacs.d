@@ -43,9 +43,22 @@
   (setq ws-trim-method-hook '(ws-trim-trailing ws-trim-tabs ws-trim-leading-tabs))
   )
 
-(init-auto-complete)
+(defadvice display-message-or-buffer (before ansi-color activate)
+  "Process ANSI color codes in shell output."
+  (let ((buf (ad-get-arg 0)))
+    (and (bufferp buf)
+         (string= (buffer-name buf) "*Shell Command Output*")
+         (with-current-buffer buf
+           (ansi-color-apply-on-region (point-min) (point-max))))))
 
+(defun init-ascope()
+  (require 'ascope)
+  )
+
+
+(init-auto-complete)
 (init-ws)
+(init-ascope)
 
 (outline-minor-mode 1)
 
@@ -55,11 +68,3 @@
 
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
-
-(defadvice display-message-or-buffer (before ansi-color activate)
-  "Process ANSI color codes in shell output."
-  (let ((buf (ad-get-arg 0)))
-    (and (bufferp buf)
-         (string= (buffer-name buf) "*Shell Command Output*")
-         (with-current-buffer buf
-           (ansi-color-apply-on-region (point-min) (point-max))))))
