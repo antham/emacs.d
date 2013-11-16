@@ -11,10 +11,8 @@
 (global-set-key (kbd "C-c a c") 'ack)
 (global-set-key (kbd "C-c b")   'eval-buffer)
 (global-set-key (kbd "C-c c")   'magit-status)
-(global-set-key (kbd "C-c e")   'yas/expand)
 (global-set-key (kbd "C-c f c") 'copy-full-path-to-kill-ring)
 (global-set-key (kbd "C-c f d") 'find-dired)
-(global-set-key (kbd "C-c f e") 'flyc/show-fly-error-at-point-now)
 (global-set-key (kbd "C-c f g") 'find-grep-dired)
 (global-set-key (kbd "C-c f n") 'find-name-dired)
 (global-set-key (kbd "C-c f s") 'show-file-name)
@@ -24,9 +22,6 @@
 (global-set-key (kbd "C-c i l") 'emamux:run-last-command)
 (global-set-key (kbd "C-c i r") 'emamux:run-command)
 (global-set-key (kbd "C-c j")   'helm-backup)
-(global-set-key (kbd "C-c m b") 'grep-buffers)
-(global-set-key (kbd "C-c m m") 'moccur)
-(global-set-key (kbd "C-c m o") 'occur-by-moccur)
 (global-set-key (kbd "C-c n")   'async-shell-command)
 (global-set-key (kbd "C-c s g") 'ascope-find-global-definition)
 (global-set-key (kbd "C-c s s") 'ascope-find-this-symbol)
@@ -39,8 +34,6 @@
 (global-set-key (kbd "C-c s p") 'ascope-pop-mark)
 (global-set-key (kbd "C-c t")   'term)
 (global-set-key (kbd "C-c w d") 'delete-trailing-whitespace)
-(global-set-key (kbd "C-c w l") 'wl)
-(global-set-key (kbd "C-c w s") 'toggle-show-trailing-whitespace-show-ws)
 (global-set-key (kbd "C-c u") 'browse-url-generic)
 
 (global-set-key (kbd "C-c ,") 'shell-command-on-region)
@@ -63,10 +56,7 @@
 (define-key global-map (kbd "C-<right>") 'windmove-right)
 (define-key global-map (kbd "C-<left>" ) 'windmove-left)
 
-
 (define-key global-map (kbd "M-z" ) 'zap-up-to-char)
-
-(global-set-key (kbd "<f11>") 'toggle-fullscreen)
 
 (define-key global-map (kbd "s-SPC") 'term-toggle-mode)
 
@@ -116,7 +106,7 @@
 
 (global-set-key (kbd "M-[ (") ctl-x-r-map)
 
-(define-key global-map (kbd "M-O A"   ) 'windmove-up)
-(define-key global-map (kbd "M-O B" ) 'windmove-down)
+(define-key global-map (kbd "M-O A") 'windmove-up)
+(define-key global-map (kbd "M-O B") 'windmove-down)
 (define-key global-map (kbd "M-O C") 'windmove-right)
-(define-key global-map (kbd "M-O D" ) 'windmove-left)
+(define-key global-map (kbd "M-O D") 'windmove-left)
