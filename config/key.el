@@ -23,6 +23,7 @@
 (global-set-key (kbd "C-c i c") 'emamux:close-panes)
 (global-set-key (kbd "C-c i l") 'emamux:run-last-command)
 (global-set-key (kbd "C-c i r") 'emamux:run-command)
+(global-set-key (kbd "C-c j")   'helm-backup)
 (global-set-key (kbd "C-c m b") 'grep-buffers)
 (global-set-key (kbd "C-c m m") 'moccur)
 (global-set-key (kbd "C-c m o") 'occur-by-moccur)
