@@ -4,7 +4,7 @@
 (global-set-key (kbd "M-.") 'helm-gtags-select)
 (global-set-key (kbd "C-;") 'file-helm)
 (global-set-key (kbd "C-,") 'buffer-helm)
-(global-set-key (kbd "C-x C-f") 'find-file)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "C-c a a") 'helm-ack)
