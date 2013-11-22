@@ -66,6 +66,8 @@
  '(php-mode-force-pear t)
  '(php-mode-hook (quote (flymake-php-load)))
  '(projectile-global-mode t)
+ '(projectile-keymap-prefix "p")
+ '(projectile-switch-project-action (quote helm-projectile))
  '(recentf-mode t)
  '(remote-shell-program "zsh")
  '(save-place t nil (saveplace))
