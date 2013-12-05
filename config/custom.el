@@ -42,6 +42,8 @@
  '(gtags-path-style (quote absolute))
  '(gtags-suggested-key-mapping nil)
  '(helm-backup-path "~/.helm-backup")
+ '(helm-gtags-auto-update t)
+ '(helm-gtags-ignore-case t)
  '(helm-moccur-always-search-in-current t)
  '(helm-mode t)
  '(history-delete-duplicates nil)
