@@ -11,6 +11,7 @@
 (global-set-key (kbd "C-c b")   'eval-buffer)
 (global-set-key (kbd "C-c c")   'magit-status)
 (global-set-key (kbd "C-c d")   'find-name-dired)
+(global-set-key (kbd "C-c e")   'eshell)
 (global-set-key (kbd "C-c f")   'helm-find)
 (global-set-key (kbd "C-c g")   'grep)
 (global-set-key (kbd "C-c i c") 'emamux:close-panes)
