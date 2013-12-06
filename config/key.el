@@ -32,6 +32,7 @@
 (global-set-key (kbd "C-c s o") 'ascope-clear-overlay-arrow)
 (global-set-key (kbd "C-c s p") 'ascope-pop-mark)
 (global-set-key (kbd "C-c u")   'browse-url-generic)
+(global-set-key (kbd "C-c w")   'wdired-change-to-wdired-mode)
 (global-set-key (kbd "C-c z" )  'zap-up-to-char)
 
 (global-set-key (kbd "C-$") 'dabbrev-expand)
