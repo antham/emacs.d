@@ -10,3 +10,4 @@ url/cookies
 projectile-bookmarks.eld
 /eshell/lastdir
 elpa/archives/*
+.cask/*
