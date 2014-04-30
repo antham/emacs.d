@@ -65,7 +65,7 @@
 ;;;;;;  diredp-dired-files-other-window diredp-dired-files diredp-wrap-around-flag
 ;;;;;;  diredp-w32-local-drives diredp-prompt-for-bookmark-prefix-flag
 ;;;;;;  diff-switches diredp-image-preview-in-tooltip diredp-auto-focus-frame-for-thumbnail-tooltip-flag)
-;;;;;;  "dired+" "dired+.el" (21340 56399 656571 205000))
+;;;;;;  "dired+" "dired+.el" (21344 54474 588382 615000))
 ;;; Generated autoloads from dired+.el
 
 (defvar diredp-auto-focus-frame-for-thumbnail-tooltip-flag nil "\
@@ -81,8 +81,14 @@ It also has no effect for Emacs versions prior to Emacs 22.")
 
 (defvar diredp-image-preview-in-tooltip (or (and (boundp 'image-dired-thumb-size) image-dired-thumb-size) 100) "\
 *Whether and what kind of image preview to show in a tooltip.
-To enable image preview you must turn on `tooltip-mode' and load
-library `image-dired.el'.  See also option
+The possible values are:
+
+ `nil'       : do not show a tooltip preview
+ integer N>0 : show a thumbnail preview of that size
+ `full'      : show a full-size preview of the image
+
+To enable tooltip image preview you must turn on `tooltip-mode' and
+load library `image-dired.el'.  See also option
 `diredp-auto-focus-frame-for-thumbnail-tooltip-flag'.
 
 This option has no effect for Emacs versions prior to Emacs 22.")
@@ -1631,7 +1637,7 @@ Send a bug report about a Dired+ problem.
 
 ;;;***
 
-;;;### (autoloads nil nil ("dired+-pkg.el") (21340 56399 772815 278000))
+;;;### (autoloads nil nil ("dired+-pkg.el") (21344 54474 775299 421000))
 
 ;;;***
 

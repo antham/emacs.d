@@ -6,12 +6,12 @@
 ;; Maintainer: Drew Adams (concat "drew.adams" "@" "oracle" ".com")
 ;; Copyright (C) 1999-2014, Drew Adams, all rights reserved.
 ;; Created: Fri Mar 19 15:58:58 1999
-;; Version: 20140425.1452
+;; Version: 20140429.1547
 ;; X-Original-Version: 2013.07.23
 ;; Package-Requires: ()
-;; Last-Updated: Fri Apr 25 07:50:13 2014 (-0700)
+;; Last-Updated: Tue Apr 29 08:45:42 2014 (-0700)
 ;;           By: dradams
-;;     Update #: 7489
+;;     Update #: 7490
 ;; URL: http://www.emacswiki.org/dired+.el
 ;; Doc URL: http://www.emacswiki.org/DiredPlus
 ;; Keywords: unix, mouse, directories, diredp, dired
@@ -1222,8 +1222,14 @@ It also has no effect for Emacs versions prior to Emacs 22."
                                                     image-dired-thumb-size)
                                                100)
   "*Whether and what kind of image preview to show in a tooltip.
-To enable image preview you must turn on `tooltip-mode' and load
-library `image-dired.el'.  See also option
+The possible values are:
+
+ `nil'       : do not show a tooltip preview
+ integer N>0 : show a thumbnail preview of that size
+ `full'      : show a full-size preview of the image
+
+To enable tooltip image preview you must turn on `tooltip-mode' and
+load library `image-dired.el'.  See also option
 `diredp-auto-focus-frame-for-thumbnail-tooltip-flag'.
 
 This option has no effect for Emacs versions prior to Emacs 22."
