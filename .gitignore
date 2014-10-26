@@ -9,3 +9,4 @@ auto-save-list/*
 elpa/*
 /eshell/lastdir
 url/cookies
+/.mc-lists.el
