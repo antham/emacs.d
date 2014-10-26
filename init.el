@@ -1,4 +1,5 @@
 ;; Load packages
+(load-file "~/.emacs.d/config/package-list.el")
 (load-file "~/.emacs.d/config/package.el")
 
 ;; Load custom file
