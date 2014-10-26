@@ -13,6 +13,7 @@
        color-theme
        dired+
        emamux
+       eyuml
        feature-mode
        flymake-php
        flymake-easy
