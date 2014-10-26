@@ -19,6 +19,7 @@
  '(anything-c-use-adaptative-sorting nil)
  '(anything-command-map-prefix-key "M-<down>")
  '(autopair-global-mode t)
+ '(before-save-hook (quote (delete-trailing-whitespace)))
  '(browse-url-browser-function (quote browse-url-generic))
  '(browse-url-firefox-program "firefox")
  '(browse-url-generic-program "/usr/bin/conkeror")
