@@ -18,7 +18,6 @@
   (require 'helm-regexp)
   (helm-other-buffer
    '(
-     helm-source-moccur
      helm-source-kill-ring
      )
    " *buffer-helm*"))
