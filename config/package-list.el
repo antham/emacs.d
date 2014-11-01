@@ -18,6 +18,7 @@
        flymake-php
        flymake-easy
        gtags
+       haskell-mode
        helm-ack
        helm-backup
        helm-gtags
