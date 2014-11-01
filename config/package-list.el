@@ -46,6 +46,7 @@
        s
        shell-pop
        switch-window
+       twig-mode
        twittering-mode
        undo-tree
        wgrep
