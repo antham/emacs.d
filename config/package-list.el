@@ -3,6 +3,7 @@
        ack
        ack-and-a-half
        ag
+       anyins
        ascope
        auto-complete
        autopair
