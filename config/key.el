@@ -105,7 +105,7 @@
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
 
 (global-set-key (kbd "M-[ %") 'split-window-horizontally)
-(global-set-key (kbd "M-[ :") 'split-window-vertically)
+(global-set-key (kbd "M-[ |") 'split-window-vertically)
 (global-set-key (kbd "M-[ !") 'delete-window)
 (global-set-key (kbd "M-[ *") 'delete-other-windows)
 (global-set-key (kbd "M-[ ^") 'enlarge-window)
