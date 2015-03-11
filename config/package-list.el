@@ -4,11 +4,10 @@
        ack-and-a-half
        ag
        anyins
-       ascope
        auto-complete
        autopair
        browse-kill-ring
-       clojure-test-mode
+       clojure-mode
        cider
        color-moccur
        color-theme
@@ -34,8 +33,6 @@
        markdown-mode+
        markdown-mode
        multiple-cursors
-       nrepl
-       clojure-mode
        paredit
        php-mode
        popup

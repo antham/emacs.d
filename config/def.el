@@ -25,14 +25,14 @@
 (defun init-auto-complete()
   (require 'auto-complete-config)
   (defun ac-common-setup ()
-    (add-to-list
-     'ac-source-functions
-     'ac-source-variables
-     'ac-source-symbols
-     'ac-source-abbrev
-     'ac-source-filename
-     'ac-source-words-in-same-mode-buffers
-     'ac-source-gtags
+    (quote
+     ac-source-functions
+     ac-source-variables
+     ac-source-symbols
+     ac-source-abbrev
+     ac-source-filename
+     ac-source-words-in-same-mode-buffers
+     ac-source-gtags
      ))
   (global-auto-complete-mode t)
   )
@@ -50,14 +50,8 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
-(defun init-ascope()
-  (require 'ascope)
-  )
-
-
 (init-auto-complete)
 (init-ws)
-(init-ascope)
 
 (outline-minor-mode 1)
 
