@@ -61,3 +61,5 @@
 
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
+
+(add-hook 'after-init-hook #'global-flycheck-mode)

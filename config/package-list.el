@@ -15,8 +15,7 @@
        emamux
        eyuml
        feature-mode
-       flymake-php
-       flymake-easy
+       flycheck
        gtags
        haskell-mode
        helm-ack
