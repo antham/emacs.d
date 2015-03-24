@@ -9,6 +9,7 @@
        browse-kill-ring
        clojure-mode
        cider
+       codesearch
        color-moccur
        color-theme
        dired+
@@ -16,6 +17,7 @@
        eyuml
        feature-mode
        flycheck
+       grep-a-lot
        gtags
        haskell-mode
        helm-ack
