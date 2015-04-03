@@ -42,6 +42,7 @@
 (global-set-key (kbd "C-c t c") 'eyuml-create-class-diagram)
 (global-set-key (kbd "C-c t u") 'eyuml-create-usecase-diagram)
 (global-set-key (kbd "C-c u")   'browse-url-generic)
+(global-set-key (kbd "C-c v")   'codesearch-search)
 (global-set-key (kbd "C-c w")   'wdired-change-to-wdired-mode)
 (global-set-key (kbd "C-c z" )  'zap-up-to-char)
 (global-set-key (kbd "C-c ,")   'helm-multi-occur)
