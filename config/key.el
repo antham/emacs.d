@@ -26,6 +26,7 @@
 (global-set-key (kbd "C-c m r") 'mc/mark-all-in-region)
 (global-set-key (kbd "C-c m w") 'mc/mark-all-words-like-this)
 (global-set-key (kbd "C-c n")   'async-shell-command)
+(global-set-key (kbd "C-c o")   'helm-swoop)
 (global-set-key (kbd "C-c r")   'shell-command-on-region)
 (global-set-key (kbd "C-c s g") 'ascope-find-global-definition)
 (global-set-key (kbd "C-c s s") 'ascope-find-this-symbol)
