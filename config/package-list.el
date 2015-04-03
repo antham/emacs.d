@@ -24,6 +24,7 @@
        helm-backup
        helm-gtags
        helm-projectile
+       helm-swoop
        helm
        http-twiddle
        ido-vertical-mode
