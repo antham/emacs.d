@@ -43,6 +43,8 @@
 
 (toggle-diredp-find-file-reuse-dir t)
 
+(global-aggressive-indent-mode 1)
+
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
 

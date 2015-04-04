@@ -2,6 +2,7 @@
       (
        ack
        ack-and-a-half
+       aggressive-indent
        anyins
        autopair
        browse-kill-ring
