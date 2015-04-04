@@ -17,6 +17,7 @@
        flycheck
        grep-a-lot
        gtags
+       ggtags
        haskell-mode
        helm-ack
        helm-backup
