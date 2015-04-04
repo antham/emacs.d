@@ -47,6 +47,7 @@
        switch-window
        twig-mode
        undo-tree
+       web-mode
        wgrep
        ws-trim
        xclip
