@@ -49,6 +49,7 @@
 (global-set-key (kbd "C-c z" )  'zap-up-to-char)
 (global-set-key (kbd "C-c ,")   'helm-multi-occur)
 (global-set-key (kbd "C-c :")   'helm-gtags-find-tag)
+(global-set-key (kbd "C-c *")   'helm-gtags-pop-stack)
 
 (global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
 (global-set-key (kbd "C-c p s g") 'helm-projectile-grep)
