@@ -2,7 +2,6 @@
       (
        ack
        ack-and-a-half
-       ag
        anyins
        auto-complete
        autopair
@@ -10,7 +9,6 @@
        clojure-mode
        cider
        codesearch
-       color-moccur
        color-theme
        dired+
        emamux
@@ -48,7 +46,6 @@
        shell-pop
        switch-window
        twig-mode
-       twittering-mode
        undo-tree
        wgrep
        ws-trim
