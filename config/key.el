@@ -50,6 +50,9 @@
 (global-set-key (kbd "C-c ,")   'helm-multi-occur)
 (global-set-key (kbd "C-c :")   'helm-gtags-find-tag)
 
+(global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
+(global-set-key (kbd "C-c p s g") 'helm-projectile-grep)
+
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
 (global-set-key (kbd "C-)") 'shell-pop)
