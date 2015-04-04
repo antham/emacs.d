@@ -3,13 +3,13 @@
        ack
        ack-and-a-half
        anyins
-       auto-complete
        autopair
        browse-kill-ring
        clojure-mode
        cider
        codesearch
        color-theme
+       company
        dired+
        emamux
        eyuml

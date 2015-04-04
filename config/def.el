@@ -22,21 +22,6 @@
      )
    " *buffer-helm*"))
 
-(defun init-auto-complete()
-  (require 'auto-complete-config)
-  (defun ac-common-setup ()
-    (quote
-     ac-source-functions
-     ac-source-variables
-     ac-source-symbols
-     ac-source-abbrev
-     ac-source-filename
-     ac-source-words-in-same-mode-buffers
-     ac-source-gtags
-     ))
-  (global-auto-complete-mode t)
-  )
-
 (defun init-ws()
   (global-ws-trim-mode t)
   (setq ws-trim-method-hook '(ws-trim-trailing ws-trim-tabs ws-trim-leading-tabs))
@@ -50,7 +35,6 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
-(init-auto-complete)
 (init-ws)
 
 (outline-minor-mode 1)
@@ -62,4 +46,5 @@
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
+(add-hook 'after-init-hook 'global-flycheck-mode)
+(add-hook 'after-init-hook 'global-company-mode)

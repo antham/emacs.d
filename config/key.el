@@ -75,12 +75,6 @@
 
 (define-key global-map (kbd "s-SPC") 'term-toggle-mode)
 
-(define-key ac-complete-mode-map (kbd "M-x") 'execute-extended-command)
-(define-key ac-complete-mode-map (kbd "C-n") 'ac-next)
-(define-key ac-complete-mode-map (kbd "C-p") 'ac-previous)
-(define-key ac-complete-mode-map (kbd "C-g") 'ac-stop)
-(define-key ac-complete-mode-map (kbd "<return>") 'ac-complete)
-
 (add-hook 'w3m-mode-hook
           '(lambda ()
              (define-key w3m-mode-map "c" 'w3m-submit-form)
