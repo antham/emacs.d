@@ -22,6 +22,7 @@
        haskell-mode
        helm-ack
        helm-backup
+       helm-cscope
        helm-gtags
        helm-projectile
        helm-swoop
