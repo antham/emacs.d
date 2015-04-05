@@ -12,7 +12,6 @@
        color-theme
        company
        dired+
-       emamux
        eyuml
        feature-mode
        flycheck
@@ -27,7 +26,6 @@
        helm-projectile
        helm-swoop
        helm
-       http-twiddle
        ido-vertical-mode
        js2-mode
        magit
@@ -38,13 +36,9 @@
        multiple-cursors
        paredit
        php-mode
-       popup
        projectile
        pkg-info
        epl
-       dash
-       request
-       s
        shell-pop
        switch-window
        twig-mode
