@@ -3,7 +3,7 @@
 
 (global-set-key (kbd "M-.") 'helm-gtags-find-tag-from-here)
 (global-set-key (kbd "C-;") 'file-helm)
-(global-set-key (kbd "C-,") 'buffer-helm)
+(global-set-key (kbd "C-,") 'helm-swoop)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
@@ -24,7 +24,6 @@
 (global-set-key (kbd "C-c m w") 'mc/mark-all-words-like-this)
 (global-set-key (kbd "C-c n")   'async-shell-command)
 (global-set-key (kbd "C-c o m") 'helm-multi-swoop-all-from-helm-swoop)
-(global-set-key (kbd "C-c o o") 'helm-swoop)
 (global-set-key (kbd "C-c o p") (lambda()
 				  (interactive)
 				  (let ((current-prefix-arg 4))
@@ -100,7 +99,7 @@
 ;;Terminal mapping
 (global-set-key (kbd "M-[ &") 'quoted-insert)
 (global-set-key (kbd "M-[ ;") 'file-helm)
-(global-set-key (kbd "M-[ ,") 'buffer-helm)
+(global-set-key (kbd "M-[ ,") 'helm-swoop)
 
 (global-set-key (kbd "M-[ $") 'dabbrev-expand)
 

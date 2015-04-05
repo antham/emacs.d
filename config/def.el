@@ -12,16 +12,6 @@
      )
    " *file-helm*"))
 
-(defun buffer-helm()
-  (interactive)
-  (require 'helm-ring)
-  (require 'helm-regexp)
-  (helm-other-buffer
-   '(
-     helm-source-kill-ring
-     )
-   " *buffer-helm*"))
-
 (defun init-ws()
   (global-ws-trim-mode t)
   (setq ws-trim-method-hook '(ws-trim-trailing ws-trim-tabs ws-trim-leading-tabs))
