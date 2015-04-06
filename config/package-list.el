@@ -48,4 +48,5 @@
        ws-trim
        xclip
        yaml-mode
+       yasnippet
        zencoding-mode))
