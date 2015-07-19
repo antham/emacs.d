@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-c m r") 'mc/mark-all-in-region)
 (global-set-key (kbd "C-c m w") 'mc/mark-all-words-like-this)
 (global-set-key (kbd "C-c n")   'async-shell-command)
-(global-set-key (kbd "C-c o m") 'helm-multi-swoop-all-from-helm-swoop)
+(global-set-key (kbd "C-c o m") 'helm-multi-swoop-all)
 (global-set-key (kbd "C-c o p") (lambda()
 				  (interactive)
 				  (let ((current-prefix-arg 4))
