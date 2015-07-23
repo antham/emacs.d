@@ -29,8 +29,6 @@
        ido-vertical-mode
        js2-mode
        magit
-       git-rebase-mode
-       git-commit-mode
        markdown-mode+
        markdown-mode
        multiple-cursors
