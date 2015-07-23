@@ -37,6 +37,8 @@
  '(helm-gtags-ignore-case t)
  '(helm-moccur-always-search-in-current t)
  '(helm-mode t)
+ '(helm-swoop-pre-input-function (lambda nil ""))
+ '(helm-swoop-speed-or-color t)
  '(history-delete-duplicates nil)
  '(history-length 100)
  '(ibuffer-expert t)
