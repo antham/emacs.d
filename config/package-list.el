@@ -30,10 +30,10 @@
        js2-mode
        magit
        markdown-mode+
-       markdown-mode
        multiple-cursors
        paredit
        php-mode
+       go-mode
        projectile
        pkg-info
        epl
