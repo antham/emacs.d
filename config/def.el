@@ -37,6 +37,8 @@
 
 (yas-global-mode 1)
 
+(key-chord-mode 1)
+
 (add-hook 'comint-output-filter-functions
           'comint-strip-ctrl-m)
 

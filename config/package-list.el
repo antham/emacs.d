@@ -13,6 +13,7 @@
        company
        dired+
        epl
+       expand-region
        eyuml
        feature-mode
        flycheck
@@ -30,6 +31,7 @@
        helm-swoop
        ido-vertical-mode
        js2-mode
+       key-chord
        magit
        markdown-mode+
        multiple-cursors

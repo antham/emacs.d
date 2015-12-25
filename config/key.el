@@ -47,6 +47,8 @@
 
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
+(key-chord-define-global "xx" 'er/expand-region)
+
 (global-set-key (kbd "C-)") 'shell-pop)
 
 (global-set-key (kbd "C-%") 'split-window-horizontally)
