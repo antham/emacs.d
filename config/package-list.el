@@ -6,26 +6,28 @@
        anyins
        autopair
        browse-kill-ring
-       clojure-mode
        cider
+       clojure-mode
        codesearch
        color-theme
        company
        dired+
+       epl
        eyuml
        feature-mode
        flycheck
+       ggtags
+       go-mode
        grep-a-lot
        gtags
-       ggtags
        haskell-mode
+       helm
        helm-ack
        helm-backup
        helm-cscope
        helm-gtags
        helm-projectile
        helm-swoop
-       helm
        ido-vertical-mode
        js2-mode
        magit
@@ -33,10 +35,8 @@
        multiple-cursors
        paredit
        php-mode
-       go-mode
-       projectile
        pkg-info
-       epl
+       projectile
        shell-pop
        switch-window
        twig-mode
