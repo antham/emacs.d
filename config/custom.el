@@ -67,6 +67,7 @@
  '(shell-pop-shell-type (quote ("terminal" "*shell*" (lambda nil (shell)))))
  '(shell-pop-term-shell "/bin/zsh")
  '(show-paren-mode t)
+ '(tab-width 4)
  '(term-input-autoexpand (quote history))
  '(terminal-redisplay-interval 1000)
  '(tool-bar-mode nil)
