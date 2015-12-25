@@ -23,6 +23,8 @@
 (global-set-key (kbd "C-c m r") 'mc/mark-all-in-region)
 (global-set-key (kbd "C-c m w") 'mc/mark-all-words-like-this)
 (global-set-key (kbd "C-c n")   'async-shell-command)
+(global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
+(global-set-key (kbd "C-c p s g") 'helm-projectile-grep)
 (global-set-key (kbd "C-c r")   'shell-command-on-region)
 (global-set-key (kbd "C-c s g") 'helm-cscope-find-global-definition)
 (global-set-key (kbd "C-c s s") 'helm-cscope-find-this-symbol)
@@ -42,9 +44,6 @@
 (global-set-key (kbd "C-c ,")   'helm-multi-swoop-all)
 (global-set-key (kbd "C-c :")   'helm-gtags-find-tag)
 (global-set-key (kbd "C-c *")   'helm-gtags-pop-stack)
-
-(global-set-key (kbd "C-c p s a") 'helm-projectile-ack)
-(global-set-key (kbd "C-c p s g") 'helm-projectile-grep)
 
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
