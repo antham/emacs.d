@@ -32,7 +32,8 @@
          (quote company-backends))
         (quote
          (company-go)))
-       (company-mode)))))
+       (company-mode))
+     go-eldoc-setup)))
  '(grep-highlight-matches (quote always))
  '(grep-scroll-output nil)
  '(gtags-path-style (quote absolute))

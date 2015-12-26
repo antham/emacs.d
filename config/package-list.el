@@ -20,6 +20,7 @@
        ggtags
        go-autocomplete
        go-complete
+       go-eldoc
        go-mode
        grep-a-lot
        gtags
