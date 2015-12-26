@@ -18,6 +18,8 @@
        feature-mode
        flycheck
        ggtags
+       go-autocomplete
+       go-complete
        go-mode
        grep-a-lot
        gtags

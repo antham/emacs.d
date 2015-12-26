@@ -11,6 +11,7 @@
  '(browse-url-firefox-program "firefox")
  '(browse-url-generic-program "/usr/bin/conkeror")
  '(column-number-mode t)
+ '(company-go-show-annotation t)
  '(cscope-do-not-update-database t)
  '(display-time-mode t)
  '(emacs-lisp-mode-hook (quote (turn-on-eldoc-mode checkdoc-minor-mode enable-paredit-mode)))
@@ -23,6 +24,15 @@
  '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 grep -n -e ")
  '(grep-find-ignored-files (quote (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
  '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 -e grep <C> -n -e <R>")
+ '(go-mode-hook
+   (quote
+    ((lambda nil
+       (set
+        (make-local-variable
+         (quote company-backends))
+        (quote
+         (company-go)))
+       (company-mode)))))
  '(grep-highlight-matches (quote always))
  '(grep-scroll-output nil)
  '(gtags-path-style (quote absolute))
