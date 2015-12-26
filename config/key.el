@@ -45,6 +45,8 @@
 (global-set-key (kbd "C-c :")   'helm-gtags-find-tag)
 (global-set-key (kbd "C-c *")   'helm-gtags-pop-stack)
 
+(global-set-key (kbd "C-c C-p") 'pop-global-mark)
+
 (global-set-key (kbd "C-$") 'dabbrev-expand)
 
 (key-chord-define-global "xx" 'er/expand-region)
