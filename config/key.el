@@ -111,7 +111,7 @@
 
 (global-set-key (kbd "M-[ (") ctl-x-r-map)
 
-(define-key global-map (kbd "M-O A") 'windmove-up)
-(define-key global-map (kbd "M-O B") 'windmove-down)
-(define-key global-map (kbd "M-O C") 'windmove-right)
-(define-key global-map (kbd "M-O D") 'windmove-left)
+(define-key global-map (kbd "M-[ a") 'windmove-up)
+(define-key global-map (kbd "M-[ b") 'windmove-down)
+(define-key global-map (kbd "M-[ c") 'windmove-right)
+(define-key global-map (kbd "M-[ d") 'windmove-left)
