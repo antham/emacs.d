@@ -98,14 +98,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(magit-branch ((t (:inherit nil :background "orange" :weight bold))))
- '(magit-diff-add ((((class color) (background dark)) (:foreground "green"))))
- '(magit-diff-del ((((class color) (background dark)) (:foreground "red"))))
- '(magit-diff-file-header ((t (:inherit magit-header :foreground "green"))))
- '(magit-diff-hunk-header ((t (:inherit magit-header :foreground "RoyalBlue4" :slant italic))))
- '(magit-diff-none ((t (:foreground "white"))))
- '(magit-header ((t (:foreground "yellow"))))
- '(magit-item-highlight ((((class color) (background dark)) (:background "gray23"))))
- '(magit-log-message ((t (:foreground "white" :weight bold))))
- '(magit-section-title ((t (:inherit nil :foreground "orange" :weight bold))))
  '(cursor ((t (:background "yellow")))))
