@@ -4,7 +4,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(after-save-hook (quote (helm-backup-versioning)))
- '(ansi-color-names-vector ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(ansi-color-names-vector
+   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(autopair-global-mode t)
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(browse-url-browser-function (quote browse-url-generic))
@@ -14,16 +15,14 @@
  '(company-go-show-annotation t)
  '(cscope-do-not-update-database t)
  '(display-time-mode t)
- '(emacs-lisp-mode-hook (quote (turn-on-eldoc-mode checkdoc-minor-mode enable-paredit-mode)))
+ '(emacs-lisp-mode-hook
+   (quote
+    (turn-on-eldoc-mode checkdoc-minor-mode enable-paredit-mode)))
  '(eshell-buffer-maximum-lines 10000)
  '(global-linum-mode t)
  '(global-undo-tree-mode t)
  '(global-whitespace-newline-mode nil)
  '(globalff-regexp-search t)
- '(grep-command "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude=\"cscope.files\" --exclude=\"cscope.out\" --exclude=\"GPATH\" --exclude=\"GRTAGS\" --exclude=\"GTAGS\" --exclude-dir=\"*git*\" -nsH2re ")
- '(grep-find-command "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 grep -n -e ")
- '(grep-find-ignored-files (quote (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
- '(grep-find-template "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 -e grep <C> -n -e <R>")
  '(go-mode-hook
    (quote
     ((lambda nil
@@ -34,6 +33,15 @@
          (company-go)))
        (company-mode))
      go-eldoc-setup)))
+ '(grep-command
+   "grep --color --exclude=\"TAGS\" --exclude=\"\\.gitmodules\" --exclude=\"cscope.files\" --exclude=\"cscope.out\" --exclude=\"GPATH\" --exclude=\"GRTAGS\" --exclude=\"GTAGS\" --exclude-dir=\"*git*\" -nsH2re ")
+ '(grep-find-command
+   "find . -type f -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 grep -n -e ")
+ '(grep-find-ignored-files
+   (quote
+    (".#*" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "TAGS" "*#")))
+ '(grep-find-template
+   "find . <X> -type f <F> -not -path '*.git*' -a -not -name TAGS -a -not -name '*#' -a -not -name '*.log' -a -not -name \"cscope.files\" -a -not -name \"cscope.out\" -a -not -name \"GPATH\" -a -not -name \"GRTAGS\" -a -not -name \"GTAGS\" -print0 | xargs -0 -e grep <C> -n -e <R>")
  '(grep-highlight-matches (quote always))
  '(grep-scroll-output nil)
  '(gtags-path-style (quote absolute))
@@ -91,7 +99,8 @@
  '(w3m-new-session-url "http://google.fr")
  '(w3m-use-cookies t)
  '(w3m-use-title-buffer-name t)
- '(w3m-user-agent "Mozilla/5.0 (compatible; Windows; U; Windows NT 6.2; WOW64; en-US; rv:12.0) Gecko/20120403211507 Firefox/12.0")
+ '(w3m-user-agent
+   "Mozilla/5.0 (compatible; Windows; U; Windows NT 6.2; WOW64; en-US; rv:12.0) Gecko/20120403211507 Firefox/12.0")
  '(xclip-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
