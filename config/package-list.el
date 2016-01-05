@@ -11,6 +11,7 @@
        codesearch
        color-theme
        company
+       company-go
        dired+
        epl
        expand-region
