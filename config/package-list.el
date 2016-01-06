@@ -49,6 +49,8 @@
        undo-tree
        web-mode
        wgrep
+       wgrep-ack
+       wgrep-helm
        ws-trim
        xclip
        yaml-mode
