@@ -74,6 +74,7 @@
  '(partial-completion-mode nil)
  '(password-cache-expiry nil)
  '(php-mode-force-pear t)
+ '(projectile-completion-system (quote helm))
  '(projectile-global-mode t)
  '(projectile-keymap-prefix "p")
  '(projectile-switch-project-action (quote projectile-dired))
